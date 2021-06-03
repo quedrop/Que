@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.earnings.view.EarnPaymentFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutOrderDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constEarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/idPreviousMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:src="@drawable/ic_arroe_left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEarnDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="13 April to 14april" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalEarnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center"
+                    android:text="$0.0"
+                    android:textColor="@color/colorThemeGreen"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEarnDates" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tvPaymentDone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingStart="@dimen/dimen_5dp"
+                    android:src="@drawable/ic_payment_done"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/tvTotalEarnings"
+                    app:layout_constraintStart_toEndOf="@+id/tvTotalEarnings"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalEarnings" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEarnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:gravity="center"
+                    android:text="Earnings"
+                    android:textColor="@color/colorThemeGreen"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTotalEarnings" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/idNextMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constEarning" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:background="@color/colorBorderGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chart" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtViewSummary"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="Summary"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDeliveryEarningView"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/total_delivery_earning"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewSummary" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDeliveryEarning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:ems="5"
+                android:fontFamily="@font/montserratsemibold"
+                android:layoutDirection="ltr"
+                android:text="@string/no_prize"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewSummary" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShippingEarningView"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/total_shipping_earning"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDeliveryEarning" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShippingEarning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:ems="5"
+                android:fontFamily="@font/montserratsemibold"
+                android:layoutDirection="ltr"
+                android:text="@string/no_prize"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDeliveryEarning" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipReceivedView"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:layoutDirection="ltr"
+                android:text="@string/total_tip_earning"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtShippingEarningView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipReceived"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:ems="5"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/no_prize"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtShippingEarningView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipReferringView"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:layoutDirection="ltr"
+                android:text="@string/total_referral_earning"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipReceivedView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTipReferring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:ems="5"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/no_prize"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipReceivedView" />
+
+            <View
+                android:id="@+id/dividerEarning"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorLighterGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipReferringView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTotalEarningView"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_40dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="@string/total"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerEarning" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTotalEarning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginBottom="@dimen/dimen_40dp"
+                android:ems="5"
+                android:fontFamily="@font/montserratbold"
+                android:text="@string/no_prize"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerEarning" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/zicBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/bg_ziczac"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotalEarning" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWeeklySummaryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserratbold"
+                android:maxLines="1"
+                android:text="Weekly Orders Summary"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zicBorder" />
+
+            <!--<TextView
+                android:id="@+id/noWeekData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Weekly Summary Found"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWeeklySummaryView"
+                />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWeeklySummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWeeklySummaryView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rangeCalendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/dimen_4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.quedrop.driver.utils.customeCalender.views.EventsCalendar
+            android:id="@+id/rangeCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:background="@color/colorWhite"
+            android:overScrollMode="never"
+            app:datesTextSize="@dimen/dimen_14sp"
+            app:eventDotColor="@color/colorPrimary"
+            app:isBoldTextOnSelectionEnabled="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:monthTitleColor="#666666"
+            app:monthTitleTextSize="@dimen/dimen_20sp"
+            app:primaryTextColor="@color/colorCalenderText"
+            app:secondaryTextColor="#ffffff"
+            app:selectedDateLabelGravity="center"
+            app:selectionColor="@color/colorPrimary"
+            app:weekHeaderColor="#666666"
+            app:weekHeaderTextSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

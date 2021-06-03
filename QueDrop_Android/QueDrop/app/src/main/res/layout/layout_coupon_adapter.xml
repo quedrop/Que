@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:paddingBottom="@dimen/dimen_5dp">
+
+    <RadioButton
+        android:id="@+id/chAddCoupon"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:button="@drawable/check_cart"
+        android:textColor="@color/colorThemeGreen"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/ivTextVeg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCouponCode"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/coupon_code_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_7dp"
+        android:paddingTop="2dp"
+        android:paddingRight="@dimen/dimen_7dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:text="@string/coupon"
+        android:textColor="@color/colorThemeGreen"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/chAddCoupon"
+        app:layout_constraintLeft_toRightOf="@+id/chAddCoupon"
+        app:layout_constraintTop_toTopOf="@+id/chAddCoupon" />
+
+    <TextView
+        android:id="@+id/tvPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:singleLine="true"
+        android:text="@string/coupon"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/chAddCoupon" />
+
+    <TextView
+        android:id="@+id/tvOfferDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/coupon"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@+id/tvPercentage" />
+
+    <TextView
+        android:id="@+id/tvExpire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/expiresCoupon"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@+id/tvOfferDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

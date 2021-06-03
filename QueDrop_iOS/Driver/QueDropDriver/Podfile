@@ -1,0 +1,45 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'QueDropDriver' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for QueDropDriver
+#Google
+		pod 'GoogleSignIn'
+		pod 'GoogleMaps'
+		pod 'GooglePlaces'
+		# Pods for PodTest
+		#pod 'Fabric'
+    #pod 'Crashlytics'
+
+		# (Recommended) Pod for Google Analytics
+		pod 'Firebase/Analytics'
+		pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
+    pod 'Firebase/Crashlytics'
+    
+		#  FBLogin
+		pod 'FBSDKLoginKit'
+		pod 'FacebookLogin'
+		
+		pod 'Alamofire'
+		pod 'ReachabilitySwift'
+		pod 'TTTAttributedLabel'
+    
+		pod 'IQKeyboardManager'
+		pod 'SDWebImage'
+		pod 'SwiftyJSON'
+		pod 'UITextView+Placeholder'
+		pod 'IHProgressHUD'
+		pod 'ImageSlideshow', '~> 1.8.3'
+		pod "ImageSlideshow/SDWebImage"
+
+    #Socket.IO
+    pod 'Socket.IO-Client-Swift'
+    pod 'FloatRatingView'
+    pod 'GrowingTextView'
+    pod 'JVFloatLabeledTextField'
+    pod 'AMPopTip'
+end

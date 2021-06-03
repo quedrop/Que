@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:keepScreenOn="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/activity_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_gradiant_toobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPhoneNumberBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/backimg"
+            android:tint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@id/ivPhoneNumberBack"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/phoneNumberTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnterPhoneNext"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:padding="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintBackEnterPhone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_phone"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="@string/instructionPhoneNumber"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivPhone" />
+
+            <View
+                android:id="@+id/dummyView"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/view_phone_no"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countryCodeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:focusable="false"
+                android:visibility="visible"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_arrowColor="@color/colorBlack"
+                app:ccp_contentColor="@color/colorBlack"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_showArrow="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintEnd_toStartOf="@+id/dividerCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dummyView"
+                app:layout_constraintTop_toTopOf="@+id/dummyView" />
+
+            <View
+                android:id="@+id/dividerCenter"
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorGrey"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeSpinner"
+                app:layout_constraintTop_toTopOf="@+id/dummyView" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etMobile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_1sdp"
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLines="1"
+                android:nextFocusDown="@id/btnEnterPhoneNext"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeSpinner"
+                app:layout_constraintTop_toTopOf="@+id/dummyView" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@color/colorGrey"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/etMobile"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeSpinner"
+                app:layout_constraintTop_toTopOf="@+id/etMobile" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <!--            <androidx.appcompat.widget.AppCompatEditText-->
+    <!--                android:id="@+id/etMobile"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_margin="@dimen/border_1dp"-->
+    <!--                android:background="@color/colorLighterGray"-->
+    <!--                android:fontFamily="@font/montserratsemibold"-->
+    <!--                android:gravity="start"-->
+    <!--                android:inputType="number"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:nextFocusDown="@id/btnNext"-->
+    <!--                android:padding="@dimen/margin_medium"-->
+    <!--                android:textColor="@color/colorGray100"-->
+    <!--                android:textSize="@dimen/text_size_ll"-->
+    <!--                app:layout_constraintBottom_toBottomOf="@+id/dummyView"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/codeSpinner"-->
+    <!--                app:layout_constraintTop_toTopOf="@+id/dummyView" />-->
+
+    <Button
+        android:id="@+id/btnEnterPhoneNext"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/phoneNumberNext"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

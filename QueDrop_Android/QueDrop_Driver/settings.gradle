@@ -1,0 +1,2 @@
+include ':app', ':JSDirectionLibs', ':ZAPChartLibs'
+rootProject.name='QueDrop Driver'

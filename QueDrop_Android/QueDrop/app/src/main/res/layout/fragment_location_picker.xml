@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLocationPicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <fragment
+        android:id="@+id/googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editAddAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/_13sdp"
+        android:background="@drawable/view_rounded"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textAddressMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="@dimen/dimen_7dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:hint="@string/hintSearch"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/clearText"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/textAddressMain"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.03" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewInfoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_13sdp"
+        android:background="@drawable/view_rounded"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveAddress">
+
+        <TextView
+            android:id="@+id/textAdditinalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:text="@string/addressInfo"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+        <EditText
+            android:id="@+id/editInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="@color/colorBackground"
+            android:gravity="center_vertical"
+            android:hint="@string/addressInfo"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:lines="4"
+            android:maxLines="2"
+            android:minHeight="60dp"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_30dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAdditinalInfo" />
+
+        <ImageView
+            android:id="@+id/clearInfo"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="@id/editInfo"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/editInfo"
+            app:layout_constraintTop_toTopOf="@id/editInfo"
+            app:layout_constraintWidth_percent="0.03" />
+
+        <TextView
+            android:id="@+id/textAddressUnitNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:text="@string/addressUnitNumber"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_m"
+            app:layout_constraintTop_toBottomOf="@+id/editInfo" />
+
+        <EditText
+            android:id="@+id/editAddressUnitNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="@color/colorBackground"
+            android:drawablePadding="@dimen/dimen_7dp"
+            android:hint="@string/addressUnitNumber"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:paddingRight="@dimen/dimen_30dp"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="@dimen/text_size_xxxm"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textAddressUnitNumber" />
+
+
+        <ImageView
+            android:id="@+id/clearAddressUnitNumber"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="@id/editAddressUnitNumber"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/editAddressUnitNumber"
+            app:layout_constraintTop_toTopOf="@id/editAddressUnitNumber"
+            app:layout_constraintWidth_percent="0.03" />
+
+
+        <TextView
+            android:id="@+id/textAddressIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:text="@string/addressIcon"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintTop_toBottomOf="@+id/editAddressUnitNumber" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@+id/textAddressIcon">
+
+            <ImageView
+                android:id="@+id/ivHomeIcon"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:src="@drawable/home_unpress"
+                android:textColor="@color/colorGrey"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.09" />
+
+            <ImageView
+                android:id="@+id/ivBusinessIcon"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:src="@drawable/briefcase_unpress"
+                android:textColor="@color/colorGrey"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toRightOf="@+id/ivSunumbrellaIcon"
+                app:layout_constraintRight_toLeftOf="@+id/ivHomeIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.09" />
+
+            <ImageView
+                android:id="@+id/ivSunumbrellaIcon"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:src="@drawable/sunumbrella_unpress"
+                android:textColor="@color/colorGrey"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toRightOf="@+id/ivBusinessIcon"
+                app:layout_constraintRight_toLeftOf="@+id/ivPlaceHolderIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.09" />
+
+            <ImageView
+                android:id="@+id/ivPlaceHolderIcon"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:src="@drawable/placeholder_unpress"
+                android:textColor="@color/colorGrey"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.09" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textAddressName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/addressName"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_m"
+            app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+        <EditText
+            android:id="@+id/editAddressName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:background="@drawable/editbg"
+            android:backgroundTint="@color/colorBackground"
+            android:drawablePadding="@dimen/dimen_7dp"
+            android:hint="@string/addressName"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:paddingRight="@dimen/dimen_30dp"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textAddressName" />
+
+        <ImageView
+            android:id="@+id/clearAddressName"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="@id/editAddressName"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/editAddressName"
+            app:layout_constraintTop_toTopOf="@id/editAddressName"
+            app:layout_constraintWidth_percent="0.03" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSaveAddress"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_13sdp"
+        android:text="@string/saveAddress"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_13sdp"
+        android:text="@string/continueAddress"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

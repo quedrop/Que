@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvRecurrenceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/margin_tiny"
+        app:cardElevation="@dimen/margin_tiny"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            >
+
+            <TextView
+                android:id="@+id/tvRecurrenceTime"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvRecurrenceAccept"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Store Name" />
+
+            <TextView
+                android:id="@+id/tvRecurrenceDate"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2dp"
+                android:fontFamily="@font/montserratregular"
+                android:singleLine="true"
+                android:textColor="@color/colorGray100"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvRecurrenceAccept"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecurrenceTime"
+                tools:text="Store Address" />
+
+            <TextView
+                android:id="@+id/tvRecurrenceType"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_2dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:fontFamily="@font/montserratregular"
+                android:singleLine="true"
+                android:textColor="@color/colorGray100"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvRecurrenceAccept"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecurrenceDate"
+                tools:text="$150" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRecurrenceAccept"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_submedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/bg_accept"
+                android:gravity="center"
+                android:maxWidth="@dimen/dimen_0dp"
+                android:minWidth="@dimen/dimen_0dp"
+                android:padding="@dimen/dimen_5dp"
+                android:text="Accept"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRecurrenceAccepted"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_submedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/bg_accepted"
+                android:gravity="center"
+                android:maxWidth="@dimen/dimen_0dp"
+                android:minWidth="@dimen/dimen_0dp"
+                android:padding="@dimen/dimen_5dp"
+                android:text="Accepted"
+                android:textAllCaps="true"
+                android:textColor="@color/colorStatusGreen"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRecurrenceReject"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_submedium"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@drawable/bg_reject"
+                android:gravity="center"
+                android:maxWidth="@dimen/dimen_0dp"
+                android:minWidth="@dimen/dimen_0dp"
+                android:padding="@dimen/dimen_5dp"
+                android:text="Reject"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecurrenceAccept"
+                app:layout_goneMarginBottom="@dimen/dimen_10dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRecurrenceRejected"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_submedium"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/bg_rejected"
+                android:gravity="center"
+                android:maxWidth="@dimen/dimen_0dp"
+                android:minWidth="@dimen/dimen_0dp"
+                android:padding="@dimen/dimen_5dp"
+                android:text="Rejected"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecurrenceAccept"
+                app:layout_goneMarginBottom="@dimen/dimen_10dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

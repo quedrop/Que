@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.mainFragment.MainFragment">
+
+    <com.quedrop.driver.utils.NonSwipeableViewPager
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/viewpagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorLightWhite" />
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        android:background="#CACACA" />
+
+    <com.google.android.material.tabs.TabLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tabs"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_huge"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:tabTextColor="@android:color/darker_gray"
+        app:tabSelectedTextColor="@color/colorBlueText"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

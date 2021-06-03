@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:keepScreenOn="true"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/driverProfileRIV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_user_placeholder"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.12"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/driverProfileNameTv"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratbold"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintEnd_toStartOf="@+id/driverProfileTimeTv"
+        app:layout_constraintStart_toEndOf="@id/driverProfileRIV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Driver Name" />
+
+    <TextView
+        android:id="@+id/driverProfileTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/dimen_13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/driverProfileNameTv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="02:30 PM" />
+
+    <com.fuzzproductions.ratingbar.RatingBar
+        android:id="@+id/driverProfileRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_7dp"
+        app:emptyDrawable="@drawable/ic_user_rating_empty"
+        app:filledDrawable="@drawable/ic_user_rating_fill"
+        app:isIndicator="true"
+
+        app:layout_constraintLeft_toRightOf="@id/driverProfileRIV"
+        app:layout_constraintTop_toBottomOf="@id/driverProfileNameTv"
+        app:numStars="5"
+        app:starSize="@dimen/dimen_12dp" />
+
+    <TextView
+        android:id="@+id/driverProfileDetailsTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintLeft_toRightOf="@id/driverProfileRIV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/driverProfileRB"
+        tools:text="this is detail about driver information. this is detail about driver information this is detail about driver information this is detail about driver information " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

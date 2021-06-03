@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "179E5FEB-D6CB-479E-BFF9-E10BAFF3EF59"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "39BDD9E9-728E-4FFD-AD1D-AE275FE4AB89"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D030DDF7-15C4-42B2-AB49-A59F0719B9A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "580"
+            endingLineNumber = "580"
+            landmarkName = "paymentResultDidFinish(dic:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D030DDF7-15C4-42B2-AB49-A59F0719B9A7 - e05f5f106becf0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.ConfirmedOrderVC.paymentResultDidFinish(dic: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "580"
+                  endingLineNumber = "580"
+                  offsetFromSymbolStart = "10608">
+               </Location>
+               <Location
+                  uuid = "D030DDF7-15C4-42B2-AB49-A59F0719B9A7 - 811c0341d169549a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSDictionary) -&gt; () in QueDrop.ConfirmedOrderVC.paymentResultDidFinish(dic: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "581"
+                  endingLineNumber = "581"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D6A5426-0CC2-47E3-BD9E-EA60097ECE7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "583"
+            endingLineNumber = "583"
+            landmarkName = "paymentResultDidFinish(dic:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E96FA3F-6F2D-476F-9BE2-1AFA1A27B639"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "554"
+            endingLineNumber = "554"
+            landmarkName = "paymentResultDidFinish(dic:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0D57557-5E62-48A3-86B2-30717330EB2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ConfirmedOrderVC/ConfirmedOrderVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "563"
+            endingLineNumber = "563"
+            landmarkName = "paymentResultDidFinish(dic:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48D8769B-CEFC-4C79-A870-C17D1A7D1C9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/InterSwitchPayment/PaymentWebViewVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EA33FC1-1322-4420-96FD-6A093AEF566E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ApplyCouponVC/ApplyCouponVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "actionChecked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FFC8194-B05A-4707-8AA2-10B1A605E97F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ApplyCouponVC/ApplyCouponVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "actionChecked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAB2D5C7-2165-44CF-96AA-224F820984AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Customer/ApplyCouponVC/ApplyCouponVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "actionChecked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADFAF898-98D8-4F15-BB77-FBD96A6BCC46"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Models/API/WebServices/API+Ext/API+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2510"
+            endingLineNumber = "2510"
+            landmarkName = "reScheduleOrder(orderId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7AD0FCA4-3938-4074-9691-5462282CE30B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Supplier+Helper/OtherFiles/StructTypes.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getAddOnStr()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D45A878-2C4F-41CC-B9D7-7F435C47F7DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Models/API/WebServices/SupplierWS/API_SupplierProduct.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getAddEditProductParams(storeCategoryId:detail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "664B3D67-1D6A-4F96-A449-02013937CF71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Models/API/WebServices/API+Ext/API+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "checkAccountAvailability(loginType:userSocialId:firstName:lastName:email:profilePic_url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "664B3D67-1D6A-4F96-A449-02013937CF71 - d5eaaf2c1567cc00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.LoginVC.checkAccountAvailability(loginType: Swift.String, userSocialId: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String, profilePic_url: Swift.String) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Models/API/WebServices/API+Ext/API+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "4432">
+               </Location>
+               <Location
+                  uuid = "664B3D67-1D6A-4F96-A449-02013937CF71 - 755a3c6b25cce8f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String, Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; () in QueDrop.LoginVC.checkAccountAvailability(loginType: Swift.String, userSocialId: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String, profilePic_url: Swift.String) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Models/API/WebServices/API+Ext/API+Ext.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C01B70C7-C3D9-425E-B4D3-118A8B644D46"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Models/API/WebServices/API+Ext/API+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "checkAccountAvailability(loginType:userSocialId:firstName:lastName:email:profilePic_url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D2832D8-5653-4C83-B7D3-A2048535ACDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "486"
+            endingLineNumber = "486"
+            landmarkName = "tapForOpenSelectionAlert(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4D0E8D4-9B0D-4500-A65D-1E45A3A72811"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "492"
+            endingLineNumber = "492"
+            landmarkName = "openAlert(ofTag:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D4D0E8D4-9B0D-4500-A65D-1E45A3A72811 - 8d4a07ae7b1514e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.SupplierOfferDetailsVC.openAlert(ofTag: Swift.Int) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "492"
+                  endingLineNumber = "492"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "D4D0E8D4-9B0D-4500-A65D-1E45A3A72811 - 8d4a07ae7b1514e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.SupplierOfferDetailsVC.openAlert(ofTag: Swift.Int) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "492"
+                  endingLineNumber = "492"
+                  offsetFromSymbolStart = "253">
+               </Location>
+               <Location
+                  uuid = "D4D0E8D4-9B0D-4500-A65D-1E45A3A72811 - 8d4a07ae7b1514e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.SupplierOfferDetailsVC.openAlert(ofTag: Swift.Int) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "492"
+                  endingLineNumber = "492"
+                  offsetFromSymbolStart = "419">
+               </Location>
+               <Location
+                  uuid = "D4D0E8D4-9B0D-4500-A65D-1E45A3A72811 - 8d4a07ae7b1514e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QueDrop.SupplierOfferDetailsVC.openAlert(ofTag: Swift.Int) -&gt; ()"
+                  moduleName = "QueDrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data/KRISHNA/QueDrop/QueDrop_iOS/Customer/QueDropCustomer/QueDropCustomer/Controllers/Supplier/SupplierOffers/SupplierOfferDetailsVC/SupplierOfferDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "492"
+                  endingLineNumber = "492"
+                  offsetFromSymbolStart = "435">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25F512A2-0F1B-4500-A500-7E5D3E11D4B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QueDropCustomer/Supplier+Helper/Extensions/Ext+UIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "checkForNotificationNavigation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

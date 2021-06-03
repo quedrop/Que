@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--in dp-->
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_3dp">3dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="dimen_19dp">19dp</dimen>
+    <dimen name="dimen_22dp">22dp</dimen>
+    <dimen name="dimen_21dp">21dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_27dp">27dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_34dp">34dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_55dp">55dp</dimen>
+    <dimen name="dimen_45dp">45dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_13dp">13dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_14dp">14dp</dimen>
+    <dimen name="dimen_17dp">17dp</dimen>
+    <dimen name="dimen_70dp">70dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_120dp">120dp</dimen>
+    <dimen name="dimen_95dp">95dp</dimen>
+    <dimen name="dimen_90dp">90dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+
+    <!--in sp-->
+
+    <dimen name="dimen_6sp">6sp</dimen>
+    <dimen name="dimen_9sp">9sp</dimen>
+    <dimen name="dimen_10sp">10sp</dimen>
+    <dimen name="dimen_11sp">11sp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_13sp">13sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_17sp">17sp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_19sp">19sp</dimen>
+    <dimen name="dimen_20sp">20sp</dimen>
+    <dimen name="dimen_21sp">21sp</dimen>
+    <dimen name="dimen_22sp">22sp</dimen>
+    <dimen name="dimen_24sp">24sp</dimen>
+    <dimen name="dimen_25sp">25sp</dimen>
+    <dimen name="dimen_27sp">27sp</dimen>
+    <dimen name="dimen_30sp">30sp</dimen>
+    <dimen name="dimen_34sp">34sp</dimen>
+    <dimen name="dimen_47sp">47sp</dimen>
+    <dimen name="dimen_51sp">51sp</dimen>
+    <dimen name="dimen_70sp">70sp</dimen>
+    <dimen name="dimen_100sp">100sp</dimen>
+
+
+    <!-- Text sizes -->
+    <dimen name="text_size_tiny">@dimen/dimen_6sp</dimen>
+    <dimen name="text_size_xxs">@dimen/dimen_9sp</dimen>
+    <dimen name="text_size_xs">@dimen/dimen_10sp</dimen>
+    <dimen name="text_size_s">@dimen/dimen_11sp</dimen>
+    <dimen name="text_size_m">@dimen/dimen_12sp</dimen>
+    <dimen name="text_size_xm">@dimen/dimen_13sp</dimen>
+    <dimen name="text_size_xxm">@dimen/dimen_14sp</dimen>
+    <dimen name="text_size_xxxm">@dimen/dimen_15sp</dimen>
+    <dimen name="text_size_xxxxm">@dimen/dimen_16sp</dimen>
+    <dimen name="text_size_l">@dimen/dimen_17sp</dimen>
+    <dimen name="text_size_ll">@dimen/dimen_19sp</dimen>
+    <dimen name="text_size_xl">@dimen/dimen_20sp</dimen>
+    <dimen name="text_size_xl2">@dimen/dimen_22sp</dimen>
+    <dimen name="text_size_xxl">@dimen/dimen_24sp</dimen>
+    <dimen name="text_size_xxxl">@dimen/dimen_27sp</dimen>
+    <dimen name="text_size_xxxxl">@dimen/dimen_34sp</dimen>
+    <dimen name="text_size_big">@dimen/dimen_47sp</dimen>
+    <dimen name="text_size_huge">@dimen/dimen_51sp</dimen>
+    <dimen name="text_size_sub_humongous">@dimen/dimen_70sp</dimen>
+    <dimen name="text_size_humongous">@dimen/dimen_100sp</dimen>
+
+
+    <!-- Margins -->
+    <dimen name="margin_text_tiny">4sp</dimen>
+    <dimen name="border_1dp">1dp</dimen>
+    <dimen name="border_05dp">0.5dp</dimen>
+    <dimen name="border_2dp">2dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_xsmall">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_submedium">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_sublarge">22dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_larger">40dp</dimen>
+    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_subhuge">56dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="margin_xhuge">76dp</dimen>
+
+    <dimen name="card_outer_margin">@dimen/margin_medium</dimen>
+    <dimen name="card_separation_margin">@dimen/margin_submedium</dimen>
+    <dimen name="card_inner_margin_small">16dp</dimen>
+    <dimen name="card_inner_margin_medium">32dp</dimen>
+    <dimen name="message_content_image_width">350dp</dimen>
+    <dimen name="message_content_image_height">280dp</dimen>
+
+    <!-- Image size-->
+    <dimen name="image_width_24_dp">24dp</dimen>
+
+    <!-- User Profile-->
+    <dimen name="user_profile_companion">42dp</dimen>
+
+
+    <!-- Buttons -->
+    <dimen name="button_radius">50dp</dimen>
+    <dimen name="button_padding_side">@dimen/margin_medium</dimen>
+    <dimen name="button_margin_side">@dimen/margin_medium</dimen>
+    <dimen name="button_min_height">62dp</dimen>
+    <dimen name="button_min_height_small">60dp</dimen>
+    <dimen name="button_text_letter_spacing">@dimen/text_spacing_expanded_m</dimen>
+    <dimen name="button_gradient_angle">90</dimen>
+    <dimen name="button_confirm_gradient_angle">45</dimen>
+
+    <dimen name="button_confirm_size">140dp</dimen>
+    <dimen name="button_confirm_outer_padding">10dp</dimen>
+    <dimen name="button_confirm_inside_padding">25dp</dimen>
+
+    <dimen name="action_button_progress_size">30dp</dimen>
+
+
+
+    <!-- Text letter spacing -->
+    <dimen name="text_spacing_expanded_tiny">0.05</dimen>
+    <dimen name="text_spacing_expanded_xs">0.06</dimen>
+    <dimen name="text_spacing_expanded_s">0.08</dimen>
+    <dimen name="text_spacing_expanded_m">0.1</dimen>
+    <dimen name="text_spacing_expanded_l">0.13</dimen>
+    <dimen name="text_spacing_expanded_xl">0.2</dimen>
+    <dimen name="text_spacing_expanded_xxl">0.25</dimen>
+    <dimen name="text_line_height_extra_medium">4sp</dimen>
+
+    <!-- Card -->
+    <dimen name="theft_header_card_height">49dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_header_corner_radius">18dp</dimen>
+    <dimen name="card_header_elevation">4dp</dimen>
+    <dimen name="card_floating_button_elevation">8dp</dimen>
+
+    <!-- Edit text -->
+    <dimen name="edittext_height">45dp</dimen>
+    <dimen name="edittext_radius">50dp</dimen>
+    <dimen name="edittext_padding_horizontal">22dp</dimen>
+    <dimen name="edittext_padding_vertical">15dp</dimen>
+    <dimen name="edittext_margin_horizontal">22dp</dimen>
+    <dimen name="edittext_large_height">65dp</dimen>
+    <dimen name="edittext_large_padding_horizontal">25dp</dimen>
+    <dimen name="edittext_large_padding_vertical">8dp</dimen>
+    <dimen name="edittext_large_radius">@dimen/card_corner_radius</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider_thin">1dp</dimen>
+    <dimen name="divider_thickness">1.9dp</dimen>
+    <dimen name="divider_thickness_thick">2dp</dimen>
+
+    <!-- Guide -->
+    <dimen name="box_setup_guide_image_ratio">0.5</dimen>
+
+    <!-- Custom countdown timer -->
+    <dimen name="custom_countdown_timer_size">150dp</dimen>
+    <dimen name="custom_countdown_timer_line_thickness">6dp</dimen>
+    <dimen name="custom_countdown_timer_inner_radius">69dp</dimen>
+
+    <!-- Shadow gradient -->
+    <dimen name="shadow_height">10dp</dimen>
+
+    <!-- Confirm slide button -->
+    <dimen name="confirm_slide_button_radius">10dp</dimen>
+    <dimen name="confirm_slide_button_side_padding">18dp</dimen>
+    <dimen name="confirm_slide_button_radius_large">30dp</dimen>
+    <dimen name="confirm_slide_button_height">10dp</dimen>
+
+    <dimen name="map_line_width">3dp</dimen>
+    <dimen name="map_line_dash_length">6dp</dimen>
+    <dimen name="map_line_gap_length">3dp</dimen>
+
+
+
+    <dimen name="height_month_title">40dp</dimen>
+    <dimen name="height_week_day_header">32dp</dimen>
+
+    <!--size-->
+    <dimen name="text_calendar_padding">16dp</dimen>
+    <dimen name="text_calendar_date">16sp</dimen>
+    <dimen name="text_month_title">16sp</dimen>
+    <dimen name="text_week_day_header">9sp</dimen>
+
+    <!--width-->
+    <dimen name="width_circle_stroke">1dp</dimen>
+
+    <!--miscellaneous-->
+    <dimen name="dimen_date_text_view">40dp</dimen>
+    <dimen name="radius_event_dot">8dp</dimen>
+    <dimen name="padding_top_month_title">8dp</dimen>
+
+</resources>

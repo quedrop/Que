@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotFragmentBg"
+    android:keepScreenOn="true"
+    tools:context="com.quedrop.customer.ui.storewithproduct.view.StoreDetailsActivity">
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/ivSlider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tint="#80000000"
+        app:layout_constraintDimensionRatio="2:1.17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="@color/colorWhite"
+        app:sliderIndicatorUnselectedColor="@color/colorDarkGrey"
+        app:sliderStartAutoCycle="false" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        app:layout_constraintDimensionRatio="2:1.17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackStore"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/backimg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.07">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivFavouriteStores"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/dimen_18dp"
+            android:src="@drawable/heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toLeftOf="@+id/ivSearchCategories"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.06" />
+
+        <ImageView
+            android:id="@+id/ivSearchCategories"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/search_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.06" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivStoreImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/view_rounded_search_image"
+        android:padding="@dimen/dimen_1dp"
+        android:src="@drawable/placeholder_order_cart_product"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSlider"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_percent="0.13"
+        app:riv_corner_radius="@dimen/dimen_7dp" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/view_rounded_transperent"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSlider"
+        app:layout_constraintRight_toRightOf="@+id/ivSlider" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintStoreDetails2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/_13sdp"
+        android:paddingRight="@dimen/_13sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSlider">
+
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvStoreRating"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/view_rounded_white"-->
+        <!--            android:drawableLeft="@drawable/rate"-->
+        <!--            android:drawablePadding="@dimen/dimen_2"-->
+        <!--            android:paddingLeft="@dimen/dimen_7"-->
+        <!--            android:paddingTop="@dimen/dimen_2"-->
+        <!--            android:paddingRight="@dimen/dimen_7"-->
+        <!--            android:paddingBottom="@dimen/dimen_2"-->
+        <!--            android:singleLine="true"-->
+        <!--            android:text="4.5"-->
+        <!--            android:textColor="@color/colorDarkGrey"-->
+        <!--            android:textSize="@dimen/dimen_10"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/tvStoreName"-->
+        <!--            app:layout_constraintLeft_toRightOf="@+id/tvStoreName"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tvStoreName" />-->
+
+        <TextView
+            android:id="@+id/tvStoreAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:drawableLeft="@drawable/place"
+            android:drawablePadding="@dimen/dimen_2dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:singleLine="true"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_xxm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStoreName" />
+
+        <TextView
+            android:id="@+id/tvOpeningStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:drawableLeft="@drawable/date"
+            android:drawablePadding="@dimen/dimen_2dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:singleLine="true"
+            android:textColor="@color/colorGreenStatus"
+            android:textSize="@dimen/text_size_xm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStoreAddress" />
+
+        <TextView
+            android:id="@+id/tvCurrentDayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:singleLine="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintLeft_toRightOf="@+id/tvOpeningStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvStoreAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tvCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="start"
+        android:paddingLeft="@dimen/_13sdp"
+        android:paddingRight="@dimen/_13sdp"
+        android:text="@string/categories"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintStoreDetails2" />
+
+    <TextView
+        android:id="@+id/tvSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/slash"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toEndOf="@+id/tvCategories"
+        app:layout_constraintTop_toBottomOf="@+id/constraintStoreDetails2" />
+
+    <TextView
+        android:id="@+id/tvFreshProduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingLeft="@dimen/_13sdp"
+        android:paddingRight="@dimen/_13sdp"
+        android:text="@string/fresh_produce"
+        android:textColor="@color/colorLightGray"
+        android:visibility="gone"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toEndOf="@+id/tvSlash"
+        app:layout_constraintTop_toBottomOf="@+id/constraintStoreDetails2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStoreDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/_13sdp"
+        android:paddingRight="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategories" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

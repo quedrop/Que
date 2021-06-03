@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_rounded_dialog"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+    <ImageView
+        android:id="@+id/ivNoFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:padding="10dp"
+        android:src="@drawable/nofeesicon" />
+
+    <TextView
+        android:id="@+id/tvTitleNoFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNoFees"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/noFeesTitle"
+        android:textColor="@color/colorBlueText"
+        android:textSize="@dimen/text_size_xl" />
+
+    <TextView
+        android:id="@+id/tvTextNoFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitleNoFees"
+        android:layout_marginLeft="@dimen/dimen_13dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_13dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/noFeesText"
+        android:textSize="@dimen/text_size_xm" />
+
+
+</RelativeLayout>

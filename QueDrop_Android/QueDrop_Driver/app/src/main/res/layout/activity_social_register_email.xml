@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.register.view.SocialRegisterEmailActivity">
+
+
+    <include
+        android:id="@+id/toolbarRegister"
+        layout="@layout/toolbar_normal" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/email"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_xxxxm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRegister" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_min_height"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_submedium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/bg_email"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="start"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:nextFocusDown="@id/etPassword"
+        android:padding="@dimen/margin_medium"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_ll"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReferral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/add_referral"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_xxxxm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etReferral"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_min_height"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_submedium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/bg_email"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="start"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/margin_medium"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_ll"
+        app:layout_constraintTop_toBottomOf="@+id/tvReferral" />
+
+    <CheckBox
+        android:id="@+id/policyCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/check_cart"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_submedium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:fontFamily="@font/montserratsemibold"
+        android:text=""
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_xxxxm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etReferral" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_2dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_xxxxm"
+        app:layout_constraintStart_toEndOf="@+id/policyCheck"
+        app:layout_constraintTop_toTopOf="@+id/policyCheck" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_larger"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

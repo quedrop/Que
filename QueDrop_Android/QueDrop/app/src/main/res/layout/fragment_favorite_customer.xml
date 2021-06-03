@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotFragmentBg"
+    android:keepScreenOn="true">
+
+
+   <!-- <include
+        android:id="@+id/toolbar"
+        layout="@layout/fragmnet_toolbar" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_gradiant_toobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivFavouritesBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/backimg"
+            android:tint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@id/ivFavouritesBack"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/favoriteTabs"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textEmptyFav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="@string/emptyFav"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar" />
+
+    <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout
+       android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srl_direction="top"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favoriteRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_13sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    </com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

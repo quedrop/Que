@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Top : 562cae
+
+  bottom : 1c77f2-->
+
+    <color name="startGradientColor">#562cae</color>
+    <color name="endGradientColor">#1c77f2</color>
+    <color name="colorPrimary">#562cae</color>
+    <color name="colorPrimaryDark">#562cae</color>
+    <color name="colorAccent">#562cae</color>
+    <color name="colorBackground">#f5faff</color>
+    <color name="colorBlueText">#1850ca</color>
+    <color name="colorGrayText">#4C4C4C</color>
+    <color name="colorLightGray">#8B8B8B</color>
+    <color name="colorDarkBlue">#1c77f2</color>
+
+    <color name="colorGray100">#4C4C4C</color>
+    <color name="colorBorderGray">#C4C4C4</color>
+
+    <color name="colorMagenta">#ffa5af</color>
+    <color name="colorPaymentBlue">#b4bcff</color>
+
+
+    <!--    <color name="colorPrimary">#008577</color>-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorThemeGreen">#1850ca</color>
+    <color name="colorThemeLightGreen">#573382ED</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#B0B0B0</color>
+    <color name="colorEditbg">#F9F9F9</color>
+    <color name="colorLightGrey">#C2C2C2</color>
+    <color name="colorLightBg">#f4f3f3</color>
+    <color name="colotFragmentBg">#f5faff</color>
+    <color name="colorGreyMain">#EDEDED</color>
+    <color name="bgPopup">#F5C0BFBF</color>
+    <color name="bgBlackColorAlpha">#80000000</color>
+    <color name="colorDarkGrey1">#5B5B5B</color>
+    <color name="colorBlue">#1850ca</color>
+    <color name="colorDarkGrey">#818181</color>
+    <color name="colorRed">#C32C0F</color>
+    <color name="colorGreenStatus">#53DE8F</color>
+    <color name="colorOrange">#FF8344</color>
+    <color name="text_black_transparent">#4A000000</color>
+    <color name="slycalendar_defBackgroundColor">#ffffff</color>
+    <color name="slycalendar_defHeaderColor">@color/colorThemeGreen</color>
+    <color name="slycalendar_defHeaderTextColor">#ffffff</color>
+    <color name="slycalendar_defTextColor">@color/colorDarkGrey</color>
+    <color name="slycalendar_defSelectedColor">@color/colorThemeGreen</color>
+    <color name="slycalendar_defSelectedTextColor">#ffffff</color>
+    <color name="colorLightGrey1">#fbfbfb</color>
+    <color name="colorDarkGray">#161616</color>
+    <color name="colorForExpress">#143759</color>
+
+    <!--Calender colors-->
+    <color name="colorAlphaThemeGreen">#33005863</color>
+    <color name="colorCalenderText">#666666</color>
+    <color name="text_black_disabled">#54000000</color>
+</resources>

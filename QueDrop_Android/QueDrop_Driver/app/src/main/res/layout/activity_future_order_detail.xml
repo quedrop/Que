@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true">
+
+    <include
+        android:id="@+id/toolbarFutureOrder"
+        layout="@layout/toolbar_normal" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutFutureOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/constCustomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarFutureOrder">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/mapViewFuture"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:focusableInTouchMode="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardPreventCornerOverlap="false"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                app:layout_constraintBottom_toTopOf="@id/txtDriverNoteView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mapViewFuture">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvOrderDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:background="@color/colorWhite"
+                        android:nestedScrollingEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOrderOnOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_10dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="@string/repeated_order_mode"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/text_size_m"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvOrderDetails" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvRecurringOrderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        app:layout_constraintStart_toStartOf="@+id/tvOrderOnOrder"
+                        app:layout_constraintTop_toBottomOf="@+id/tvOrderOnOrder"
+                        tools:text="10 November 2020" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDriverNoteView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/note"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardStore" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDriverNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/note_text"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDriverNoteView" />
+
+            <View
+                android:id="@+id/zicZac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ziczac"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDriverNote" />
+
+            <TextView
+                android:id="@+id/recurringTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recurrence order request"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:maxLines="1"
+                android:fontFamily="@font/montserratsemibold"
+                android:ellipsize="end"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintTop_toBottomOf="@+id/zicZac"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecurrenceOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recurringTitleView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_5dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/tvRUserImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@drawable/ic_user_placeholder"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.16"
+            app:riv_oval="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/border_2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserratbold"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_1dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvRAddress"
+            app:layout_constraintEnd_toStartOf="@+id/btnChat"
+            app:layout_constraintStart_toEndOf="@+id/tvRUserImage"
+            app:layout_constraintTop_toTopOf="@+id/tvRUserImage"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Yohana Yusuf" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:drawableStart="@drawable/ic_address_pin_gray"
+            android:textColor="@color/colorGray100"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toTopOf="@+id/userRRating"
+            app:layout_constraintEnd_toStartOf="@+id/btnChat"
+            app:layout_constraintStart_toEndOf="@+id/tvRUserImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvRUserName"
+            tools:text="addrevvjgjgjjgjjjjjjjjjjjjjjjjjjjjjjjjgjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" />
+
+        <com.fuzzproductions.ratingbar.RatingBar
+            android:id="@+id/userRRating"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            app:emptyDrawable="@drawable/ic_user_rating_empty"
+            app:filledDrawable="@drawable/ic_user_rating_fill"
+            app:isIndicator="true"
+            app:layout_constraintStart_toStartOf="@+id/tvRAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvRAddress"
+            app:numStars="5"
+            app:rating="3.6"
+            app:starSize="10dp"
+            app:starSpacing="@dimen/dimen_2dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChat"
+            style="@style/QueDrop.Button.DarkBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:minWidth="@dimen/dimen_0dp"
+            android:minHeight="@dimen/dimen_0dp"
+            android:padding="@dimen/dimen_5dp"
+            android:text="@string/chat"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dimen_14sp"
+            app:layout_constraintStart_toEndOf="@+id/tvRAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

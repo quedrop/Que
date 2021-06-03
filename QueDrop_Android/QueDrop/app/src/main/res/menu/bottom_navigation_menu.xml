@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/supplier_tab_category"
+        android:orderInCategory="1"
+        android:title="Category"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_order"
+        android:enabled="true"
+        android:icon="@drawable/supplier_tab_order"
+        android:orderInCategory="2"
+        android:title="Order"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_notification"
+        android:enabled="true"
+        android:icon="@drawable/supplier_tab_notification"
+        android:orderInCategory="3"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_offer"
+        android:enabled="true"
+        android:icon="@drawable/supplier_tab_offer"
+        android:orderInCategory="4"
+        android:title="Offers"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/supplier_tab_profile"
+        android:orderInCategory="5"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>

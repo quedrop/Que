@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreNumberInfoWindow" customModule="GoferDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNumber" destination="Tcx-TG-8ln" id="KXE-UV-l2g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="FW3-RU-k9X" id="ZRX-Ih-nBv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FW3-RU-k9X">
+                    <rect key="frame" x="5" y="5" width="40" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-TG-8ln">
+                            <rect key="frame" x="2" y="2" width="36" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.12941176470588234" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Tcx-TG-8ln" secondAttribute="trailing" constant="2" id="4aR-c1-pT9"/>
+                        <constraint firstItem="Tcx-TG-8ln" firstAttribute="leading" secondItem="FW3-RU-k9X" secondAttribute="leading" constant="2" id="8sf-S0-eEw"/>
+                        <constraint firstAttribute="bottom" secondItem="Tcx-TG-8ln" secondAttribute="bottom" constant="2" id="kQo-QJ-CFr"/>
+                        <constraint firstItem="Tcx-TG-8ln" firstAttribute="top" secondItem="FW3-RU-k9X" secondAttribute="top" constant="2" id="rHv-OE-bqE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FW3-RU-k9X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="9gZ-SF-jBJ"/>
+                <constraint firstItem="FW3-RU-k9X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="H93-Mr-UzE"/>
+                <constraint firstAttribute="trailing" secondItem="FW3-RU-k9X" secondAttribute="trailing" constant="5" id="PlV-n9-XEl"/>
+                <constraint firstAttribute="bottom" secondItem="FW3-RU-k9X" secondAttribute="bottom" constant="5" id="dui-7p-XHq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-37.681159420289859" y="84.040178571428569"/>
+        </view>
+    </objects>
+</document>

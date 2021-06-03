@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:background="@drawable/bg_store_image"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_15dp">
+
+    <ImageView
+        android:id="@+id/ivRestImage"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginStart="@dimen/dimen_2dp"
+        android:background="@drawable/bg_store_image"
+        android:padding="@dimen/dimen_1dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.17" />
+
+
+    <TextView
+        android:id="@+id/tvRestName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratbold"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_xxxxm"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvRestRating"
+        app:layout_constraintStart_toEndOf="@+id/ivRestImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Store Name" />
+
+    <TextView
+        android:id="@+id/tvRestAddress"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:singleLine="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/text_size_xxm"
+        app:layout_constraintStart_toEndOf="@+id/ivRestImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvRestName"
+        tools:text="Store Address" />
+
+    <TextView
+        android:id="@+id/tvRestKm"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:singleLine="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/text_size_xxm"
+        app:layout_constraintStart_toEndOf="@+id/ivRestImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvRestAddress"
+        tools:text="3.7 km" />
+
+    <TextView
+        android:id="@+id/tvRestRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:drawableStart="@drawable/ic_user_rating_fill"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/text_size_xxm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3.7 km" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

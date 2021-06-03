@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:keepScreenOn="true"
+    tools:context="com.quedrop.customer.ui.cart.view.FutureOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/firstConstraintFuture"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_gradiant_toobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackFuture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/backimg"
+            android:tint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvTitleFuture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@id/ivBackFuture"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/futureOrderTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+
+    <com.quedrop.customer.ui.cart.view.timepicker.LoopView
+        android:id="@+id/loop_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/colorLightBg"
+        app:canLoop="true"
+        app:centerTextColor="#ff000000"
+        app:drawItemCount="7"
+        app:initPosition="3"
+        app:layout_constraintHeight_percent="0.27"
+        app:layout_constraintTop_toBottomOf="@+id/firstConstraintFuture"
+        app:lineColor="@color/colorPrimary"
+        app:textSize="@dimen/_14ssp"
+        app:topBottomTextColor="#ffafafaf" />
+
+
+    <TextView
+        android:id="@+id/tvRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBackground"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_13sdp"
+        android:text="@string/repeat"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/loop_view"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/linearSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:background="@drawable/view_rounded_search_image"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRepeat"
+        app:layout_constraintRight_toRightOf="@+id/tvRepeat"
+        app:layout_constraintTop_toTopOf="@+id/tvRepeat">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="@dimen/_13sdp"
+        android:paddingRight="@dimen/_13sdp"
+        android:weightSum="7"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeat">
+
+        <TextView
+            android:id="@+id/tvSunday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/sunday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/tvMonday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/monday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/tvTuesday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/tuesday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/tvWednesday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/wednesday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+
+        <TextView
+            android:id="@+id/tvThursday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/thursday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/tvFriday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/friday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/tvSaturday"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/view_rounded_search_image"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/saturday"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/colotFragmentBg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearHorizontal" />
+
+    <TextView
+        android:id="@+id/tvRepeatUntil"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:drawableEnd="@drawable/rightarrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_13sdp"
+        android:text="@string/repeatUntil"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/colotFragmentBg"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatUntil" />
+
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:drawableEnd="@drawable/rightarrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_13sdp"
+        android:text="@string/label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editLabelAdvance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/view_rounded_search_image"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        android:hint="@string/writeHere"
+        android:inputType="text"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13ssp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+    <ImageView
+        android:id="@+id/ivCloseFuture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:src="@drawable/close"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/editLabelAdvance"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintRight_toRightOf="@+id/editLabelAdvance"
+        app:layout_constraintTop_toTopOf="@+id/editLabelAdvance"
+        app:layout_constraintWidth_percent="0.04" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colotFragmentBg"
+        app:layout_constraintTop_toBottomOf="@+id/editLabelAdvance" />
+
+    <Button
+        android:id="@+id/btnSaveFuture"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_13sdp"
+        android:text="@string/saveFuture"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

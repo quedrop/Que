@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_2dp"
+    android:paddingTop="@dimen/dimen_3dp"
+    android:paddingRight="@dimen/dimen_2dp"
+    android:paddingBottom="@dimen/dimen_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childConstraintCurrent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivVegIconCurrent"-->
+        <!--            android:layout_width="@dimen/dimen_0dp"-->
+        <!--            android:layout_height="@dimen/dimen_0dp"-->
+        <!--            android:src="@drawable/topicveg"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/tvProductNameCurrent"-->
+        <!--            app:layout_constraintDimensionRatio="1:1"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tvProductNameCurrent"-->
+        <!--            app:layout_constraintWidth_percent="0.04" />-->
+
+
+        <TextView
+            android:id="@+id/tvProductNameCurrent"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_7dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_xxxxm"
+            app:layout_constraintLeft_toRightOf="@+id/ivVegIconCurrent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPAddOnsCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/default1"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/text_size_m"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductNameCurrent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

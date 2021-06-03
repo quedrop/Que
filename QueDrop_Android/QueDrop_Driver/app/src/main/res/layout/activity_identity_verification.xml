@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.identityverification.IdentityVerificationActivity">
+
+    <include
+        android:id="@+id/toolbarIdentity"
+        layout="@layout/toolbar_normal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarIdentity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_large">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="@font/montserratregular"
+                android:text="@string/add_license_photo"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLicense"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/margin_submedium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddLicense" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:fontFamily="@font/montserratregular"
+                android:text="@string/add_profile_photo"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLicense" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/margin_submedium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddProfile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddVehicleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:fontFamily="@font/montserratregular"
+                android:text="@string/add_vehicle_type"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:contentDescription="normal"
+                android:id="@+id/ivCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_sublarge"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:src="@drawable/ic_car_normal"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddVehicleType" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:contentDescription="normal"
+                android:id="@+id/ivBike"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_scooter_normal"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCar"
+                app:layout_constraintEnd_toStartOf="@+id/ivCycle"
+                app:layout_constraintStart_toEndOf="@+id/ivCar"
+                app:layout_constraintTop_toTopOf="@+id/ivCar" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/ivCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/margin_sublarge"
+                android:src="@drawable/ic_cycle_normal"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivCar" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddRegProof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="@font/montserratregular"
+                android:text="@string/add_registration_proof"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCycle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRegProof"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/margin_submedium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddRegProof" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddNumberPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:fontFamily="@font/montserratregular"
+                android:text="@string/add_number_plate"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRegProof" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddNumberPlate"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/margin_submedium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddNumberPlate" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.14">
+
+        <Button
+            android:id="@+id/btnDone"
+            style="@style/QueDrop.Button.DarkBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_submedium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

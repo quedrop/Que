@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesShimmerCVCell" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOV-SP-Xo4">
+                        <rect key="frame" x="8" y="8" width="261" height="137"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mc2-Tz-00y" customClass="FAShimmerImageView" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="261" height="137"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mc2-Tz-00y" secondAttribute="bottom" id="Buh-zw-EUw"/>
+                            <constraint firstItem="Mc2-Tz-00y" firstAttribute="top" secondItem="cOV-SP-Xo4" secondAttribute="top" id="Cqx-Wb-tDw"/>
+                            <constraint firstAttribute="trailing" secondItem="Mc2-Tz-00y" secondAttribute="trailing" id="L2a-ka-v9G"/>
+                            <constraint firstItem="Mc2-Tz-00y" firstAttribute="leading" secondItem="cOV-SP-Xo4" secondAttribute="leading" id="Tcx-DW-pyv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cOV-SP-Xo4" secondAttribute="bottom" constant="8" id="3Do-3i-lt4"/>
+                <constraint firstItem="cOV-SP-Xo4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="J1J-Gs-5x5"/>
+                <constraint firstItem="cOV-SP-Xo4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Y7J-o2-GNi"/>
+                <constraint firstAttribute="trailing" secondItem="cOV-SP-Xo4" secondAttribute="trailing" constant="8" id="YN6-lq-7P8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="277" height="153"/>
+            <point key="canvasLocation" x="-32.608695652173914" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

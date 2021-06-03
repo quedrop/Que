@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.enterphonenumber.EnterPhoneNumberActivity">
+
+    <include
+        android:id="@+id/toolbarPhone"
+        layout="@layout/toolbar_normal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPhone">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_subhuge"
+                android:src="@drawable/ic_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_submedium"
+                android:fontFamily="@font/montserratregular"
+                android:gravity="center"
+                android:text="@string/enter_phone_alert"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivPhone" />
+
+            <View
+                android:id="@+id/dummyView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_email"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+
+            <com.hbb20.CountryCodePicker
+                app:ccp_hintExampleNumber="true"
+                android:id="@+id/countryCodeSpinner"
+                app:ccp_showFlag="true"
+                app:ccp_contentColor="@color/colorGray100"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dummyView"
+                app:layout_constraintTop_toTopOf="@+id/dummyView"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintEnd_toStartOf="@+id/dividerCenter"
+                app:ccp_arrowColor="@color/colorGray100"
+                app:ccp_showArrow="true"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_defaultNameCode="GB"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/dividerCenter"
+                android:layout_width="@dimen/border_1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_xsmall"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:background="@color/colorBorderGray"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeSpinner"
+                app:layout_constraintTop_toTopOf="@+id/dummyView" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etMobile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/border_1dp"
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="start"
+                android:inputType="number"
+                android:maxLines="1"
+                android:nextFocusDown="@id/btnNext"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorGray100"
+                android:textSize="@dimen/text_size_ll"
+                app:layout_constraintBottom_toBottomOf="@+id/dummyView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeSpinner"
+                app:layout_constraintTop_toTopOf="@+id/dummyView" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/QueDrop.Button.DarkBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/etMobile" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

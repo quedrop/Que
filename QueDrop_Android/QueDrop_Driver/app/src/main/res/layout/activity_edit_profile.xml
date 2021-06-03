@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:keepScreenOn="true">
+
+    <include
+        android:id="@+id/toolbarProfile"
+        layout="@layout/toolbar_normal" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarProfile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_5dp"
+            >
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/ic_user_placeholder"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_oval="true" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pickImageIv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/border_2dp"
+                android:src="@drawable/ic_profile_camera"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfileImage"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfileImage" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/first_name"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivProfileImage" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFirstName"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="@+id/cardLastName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstNameProfile">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etFirstNameProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_email"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etLastNameProfile"
+                    android:paddingStart="@dimen/dimen_16dp"
+                    android:paddingEnd="@dimen/dimen_16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen_16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLastName"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardFirstName"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstNameProfile">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etLastNameProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_email"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etUserNameProfile"
+                    android:padding="@dimen/dimen_5dp"
+                    android:paddingStart="@dimen/dimen_16dp"
+                    android:paddingEnd="@dimen/dimen_16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen_16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLastNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/last_name"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="@+id/cardLastName"
+                app:layout_constraintTop_toTopOf="@+id/tvFirstNameProfile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/user_name"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardFirstName" />
+
+            <EditText
+                android:id="@+id/etUserNameProfile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@drawable/bg_email"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:nextFocusDown="@id/etEmailProfile"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserNameProfile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmailProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/email"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etUserNameProfile" />
+
+            <EditText
+                android:id="@+id/etEmailProfile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@drawable/bg_email"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:nextFocusDown="@id/etMobileProfile"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailProfile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPhoneNumberProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etEmailProfile" />
+
+            <LinearLayout
+                android:id="@+id/lMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@drawable/bg_email"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPhoneNumberProfile">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryEditSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    app:ccp_arrowColor="@color/colorBlack"
+                    app:ccp_contentColor="@color/colorBlack"
+                    app:ccp_defaultNameCode="GB"
+                    app:ccp_hintExampleNumber="true"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showFullName="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="@dimen/dimen_16sp" />
+
+                <View
+                    android:id="@+id/dividerCenter"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:background="@color/colorLightGray"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingBottom="@dimen/dimen_5dp" />
+
+                <TextView
+                    android:id="@+id/etMobileProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:background="@color/colorBackground"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/btnSaveEditProfile"
+                    android:padding="@dimen/dimen_5dp"
+                    android:paddingStart="@dimen/dimen_16dp"
+                    android:paddingEnd="@dimen/dimen_16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen_16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/phoneNumAddEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_margin="@dimen/dimen_1dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserratmedium"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="Change"
+                    android:nextFocusDown="@id/btnSaveEditProfile"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textColor="@color/colorBlueText"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lMobile" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnSaveEditProfile"
+        style="@style/QueDrop.Button.DarkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:text="@string/save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

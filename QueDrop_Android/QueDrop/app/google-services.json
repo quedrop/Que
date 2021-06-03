@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "781167981669",
+    "firebase_url": "https://quedrop-cd4c6.firebaseio.com",
+    "project_id": "quedrop-cd4c6",
+    "storage_bucket": "quedrop-cd4c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781167981669:android:731edd9ebfcf0acb58828c",
+        "android_client_info": {
+          "package_name": "com.quedrop.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781167981669-psam7s163vivu8hp3ds39kp6j4hg8fmb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quedrop.customer",
+            "certificate_hash": "537b776c8e994c256168e71735285ea9ee3d17bb"
+          }
+        },
+        {
+          "client_id": "781167981669-d0cr169qupvsqgb1u0jiork0mc6pi6hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quedrop.customer",
+            "certificate_hash": "3e6006a4cf2dd895c9432aefc764990d6a4505d3"
+          }
+        },
+        {
+          "client_id": "781167981669-o8c42999ee84r68qkc1nd0n62i2e9rlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAviwLLKwq-Y2qICvwm5wDUKoaHnz4ieo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781167981669-o8c42999ee84r68qkc1nd0n62i2e9rlj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "781167981669-dnhnj5e64i78q47pg03d20m6fftbe1sg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.QueDropDriver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

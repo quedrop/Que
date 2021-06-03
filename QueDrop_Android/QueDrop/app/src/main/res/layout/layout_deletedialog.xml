@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_rounded_dialog">
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@drawable/deleteicon" />
+
+    <TextView
+        android:id="@+id/textTitleDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_image"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/textDelete"
+        android:textSize="@dimen/text_size_xxxxm"/>
+
+    <LinearLayout
+        android:id="@+id/linear12"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textTitleDelete"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_below="@id/linear12"
+
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/cancel"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_l" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <TextView
+            android:id="@+id/dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/colorBlueText"
+            android:textSize="@dimen/text_size_l" />
+    </LinearLayout>
+</RelativeLayout>

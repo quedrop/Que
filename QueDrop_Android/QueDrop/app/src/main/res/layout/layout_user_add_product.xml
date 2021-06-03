@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_3dp"
+    android:layout_marginBottom="@dimen/dimen_3dp"
+    android:keepScreenOn="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraintAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="@drawable/view_rounded_search_image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivImageAddProduct"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:padding="@dimen/dimen_1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_product_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="0.94:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.25"
+            app:riv_corner_radius="@dimen/dimen_5dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivImageAddProduct"
+            app:layout_constraintLeft_toRightOf="@+id/ivImageAddProduct"
+            app:layout_constraintRight_toLeftOf="@+id/tvQuantityAddProduct"
+            app:layout_constraintTop_toTopOf="@+id/ivImageAddProduct">
+
+            <EditText
+                android:id="@+id/tvNameAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:cursorVisible="true"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/typeProduct"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_xxm"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/tvNameAddProduct"-->
+            <!--            android:layout_width="@dimen/dimen_0"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:fontFamily="@font/montserrat_semibold"-->
+            <!--            android:gravity="center_vertical"-->
+            <!--            android:hint="@string/typeProduct"-->
+            <!--            android:inputType="text"-->
+            <!--            android:focusableInTouchMode="true"-->
+            <!--            android:backgroundTint="@android:color/transparent"-->
+            <!--            android:singleLine="true"-->
+            <!--            android:textColor="@color/colorBlack"-->
+            <!--            android:textSize="@dimen/dimen_16"-->
+            <!--            android:textStyle="bold"-->
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--            app:layout_constraintTop_toTopOf="parent" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ivCloseAddProduct"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:src="@drawable/close_addproduct"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.04" />
+
+
+        <EditText
+            android:id="@+id/tvQuantityAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@drawable/view_rounded_white"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/qty"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_m"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvAddItemAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:text="@string/addItemTap"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/dimen_15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/mainConstraintAddProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

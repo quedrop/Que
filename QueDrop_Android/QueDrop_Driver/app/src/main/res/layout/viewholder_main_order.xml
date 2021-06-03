@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_15dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginEnd="@dimen/dimen_15dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:background="@drawable/bg_order_item_background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainCartListCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toTopOf="@+id/borderTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ivRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@drawable/bg_store_image"
+        android:drawableStart="@drawable/ic_user_rating_fill"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:visibility="gone"
+        android:text="2.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ivDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:text="2.3"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/borderTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@color/colorBorderGray"
+        app:layout_constraintTop_toBottomOf="@+id/rvMainCartListCurrent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderOnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/order_on"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderTop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderOnOrder"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderOnOrder"
+        tools:text="10 November 2020" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmountOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/amount"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateOrder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOTotalOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        tools:text="@string/amount"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderOnOrder"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountOrder" />
+
+    <TextView
+        android:id="@+id/tvStatusOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@drawable/bg_order_status"
+        android:fontFamily="@font/montserratsemibold"
+        android:paddingStart="@dimen/dimen_7dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:text="@string/dispached_for_delivery"
+        android:textColor="@color/colorBlueText"
+        android:textSize="@dimen/dimen_12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOTotalOrder"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@color/colorLighterGray"
+        app:layout_constraintTop_toBottomOf="@+id/rvMainCartListCurrent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

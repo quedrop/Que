@@ -1,0 +1,200 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.quedrop.customer"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 8
+        versionName "0.0.8"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    /****************** USED THIS FOR RETROFIT (addInterceptor) ***********************/
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //noinspection GradleCompatible
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    //Android architecture component
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.2.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:$rootProject.retrofit_version") {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofit_rxJava_version"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit_version"
+
+    //OkHttp
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp_version"
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.11.0'
+
+    //Multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Firebase messaging
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.2'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+
+    //Google Login
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.6.2'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.smarteist:autoimageslider:1.3.2'
+
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJava_version"
+
+    //Logging
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //RxViewBinding
+    implementation 'com.jakewharton.rxbinding2:rxbinding-kotlin:2.1.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-support-v4-kotlin:2.1.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7-kotlin:2.1.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding-design-kotlin:2.1.1'
+
+    //Google Login
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+
+    //fb
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    //Socket
+    implementation('com.github.tank777:socket.io-client-java:1.10.1') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //Country code picker
+    implementation 'com.hbb20:ccp:2.3.7'
+
+    // Room
+    implementation "android.arch.persistence.room:runtime:2.2.3"
+    kapt "android.arch.persistence.room:compiler:2.2.3"
+
+    //TimeView
+    implementation 'com.params.stepview:stepview:1.0.2'
+
+    //Rating Bar
+    implementation 'com.github.fuzz-productions:RatingBar:1.0.5'
+
+    //Card View
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // Location Project
+    implementation project(':JSDirectionLibs')
+    implementation project(':ZPZxing')
+    implementation project(':ZAPChartLibs')
+    //implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+
+    //Date Formatter
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.4.Final'
+
+    //Gpay wallet
+    implementation "com.google.android.gms:play-services-wallet:18.0.0"
+
+    //multi image selection
+    implementation 'com.zfdang.multiple-images-selector:multiple-images-selector:1.1.5'
+
+    //swipe from bottom
+    implementation 'com.github.omadahealth:swipy:1.2.3@aar'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'commons-io:commons-io:2.6'
+
+    //SMS
+//    implementation 'com.google.android.gms:play-services-base:17.2.1'
+//    implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+
+    // Braintree dependencies
+    implementation 'com.braintreepayments.api:braintree:3.13.0'
+    implementation 'com.braintreepayments.api:google-payment:3.3.1'
+
+    // Google dependencies
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+
+    // Braintree dependencies
+    implementation 'com.braintreepayments.api:braintree:3.13.0'
+    implementation 'com.braintreepayments.api:google-payment:3.3.1'
+    implementation 'com.braintreepayments.api:data-collector:3.13.0'
+
+    //toooltip
+//    implementation 'com.nhaarman.supertooltips:library:3.0.0'
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.3'
+
+
+    implementation "com.google.dagger:dagger:$rootProject.dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger_version"
+
+}

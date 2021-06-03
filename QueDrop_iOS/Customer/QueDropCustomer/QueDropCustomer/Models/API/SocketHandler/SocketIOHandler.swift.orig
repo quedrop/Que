@@ -1,0 +1,258 @@
+//
+//  SocketIOHandler.swift
+//  QueDrop
+//
+//  Created by C100-104 on 03/03/20.
+//  Copyright © 2020 C100-104. All rights reserved.
+//
+
+import Foundation
+import SocketIO
+
+@objc protocol SocketIOHandlerDelegate {
+    func connectionStatus(status:SocketIOStatus)
+    @objc optional func newMessage(array:[CDMessages])
+    @objc optional func InitialMessage(array:[CDMessages])
+    @objc optional func loadMoreMessage(array:[CDMessages])
+    @objc optional func reloadMessages()
+}
+
+class SocketIOManager: NSObject{
+       
+	static let shared = SocketIOManager()
+	var socket: SocketIOClient!
+
+    // defaultNamespaceSocket and swiftSocket both share a single connection to the server
+    let manager = SocketManager(socketURL: URL(string: SOCKET_SERVER_PATH)!, config: [.log(true), .compress])
+
+    override init() {
+        super.init()
+        socket = manager.defaultSocket
+	}
+	
+	func connectSocket() {
+		//let token = UserDefaults.standard.getAccessToken()
+
+		self.manager.config = SocketIOClientConfiguration(
+			arrayLiteral: .connectParams(["user_id": USER_ID]), .secure(true)
+			)
+			socket.connect()
+	}
+	func receiveMsg() {
+		socket.on("new message here") { (dataArray, ack) in
+
+			print(dataArray.count)
+
+		}
+	}
+	
+	
+}
+
+
+class SocketIOHandler: NSObject {
+    
+    var delegate:SocketIOHandlerDelegate?
+	   
+	   var manager: SocketManager?
+	   var socket: SocketIOClient?
+	   var isHandlerAdded:Bool = false
+	   var isJoinSocket:Bool = false
+    
+    override init() {
+        super.init()
+        connectWithSocket()
+    }
+    
+    //MARK:- ConnectWithSocket
+	
+    func connectWithSocket() {
+        if manager==nil && socket == nil {
+            manager = SocketManager(socketURL: URL(string: SOCKET_SERVER_PATH)!, config: [.log(true), .compress])
+            socket = manager?.defaultSocket
+            connectSocketWithStatus()
+        }else if socket?.status == .connected {
+            self.callFunctionsAfterConnection()
+        }
+    }
+    
+    func connectSocketWithStatus(){
+        
+        socket?.on(clientEvent: .connect) {data, ack in
+            
+        }
+        
+        socket?.on(clientEvent: .statusChange) {data, ack in
+            let val = data.first as! SocketIOStatus
+            self.delegate?.connectionStatus(status: val)
+            switch val {
+            case .connected:
+                self.callFunctionsAfterConnection()
+                break
+                
+            default:
+                break
+            }
+        }
+        
+        socket?.connect()
+        print(socket?.status)
+    }
+    
+    func callFunctionsAfterConnection()  {
+        print("Connected")
+	//	if(!(isGuest)  && !isJoinSocket){
+			   let dict:NSMutableDictionary = NSMutableDictionary()
+			   dict.setValue(USER_OBJ?.userId, forKey: "user_id")
+			   joinSocketWithData(data: dict)
+	//	}
+	//	AddHandlers()
+    }
+    
+	func background(){
+	  isJoinSocket = false
+	}
+	func foreground(){
+	  callFunctionsAfterConnection()
+	}
+	   
+	   func disconnectSocket() {
+		   socket?.disconnect()
+	   }
+	//MARK:- Join Socket With User
+	  func joinSocketWithData(data:NSDictionary) {
+		  /*
+		   In order to join the socket
+		   */
+		  
+		//   if(!isGuest && !isJoinSocket) {
+			   print("USER JOIN SOCKET")
+			   socket?.emit(APISocketJoin_Socket, data)
+			   isJoinSocket = true
+			   
+			if !APP_DELEGATE.socketHandlersAdded{
+				   APP_DELEGATE.socketHandlersAdded = true
+				   AddHandlers()
+			  }
+		//   }
+	  }
+	//MARK:- Add Handlers
+	func AddHandlers()
+	{
+		//EVENT FOR UPDATE ORDER STATUS
+		socket?.on(APISocketOrderStatusChanged, callback: { (data, ack) in
+			if let dic = data[0] as? NSDictionary {
+				//POST NOTIFICATION
+				
+				//if dic["order_id"] as? Int == arrCurrentOrder[0].orderId {
+				/*	if let currStatus = dic["order_"] as? String
+				{
+				
+				}
+				*/
+				//}
+				APP_DELEGATE.scheduleNotification(notificationType: .orderStatusUpdate)//"Order Status Updated.")
+				postNotification(withName: notificationCenterKeys.orderStatus.rawValue, userInfo: dic as! [AnyHashable : Any])
+			}
+		})
+		socket?.on(APISocketOrderAccepted, callback: { (data, ack) in
+			if let dic = data[0] as? NSDictionary {
+				//POST NOTIFICATION
+				APP_DELEGATE.scheduleNotification(notificationType: .orderAccepted)
+				postNotification(withName: notificationCenterKeys.orderAccepted.rawValue, userInfo: dic as! [AnyHashable : Any])
+			}
+		})
+        socket?.on(APISocketDriverLocationChanged, callback: { (data, ack) in
+            if let dic = data[0] as? NSDictionary {
+                //POST NOTIFICATION
+                //APP_DELEGATE.scheduleNotification(notificationType: .driverLocationUpdated)
+                postNotification(withName: notificationCenterKeys.driverLocationChanged.rawValue, userInfo: dic as! [AnyHashable : Any])
+            }
+        })
+		/*socket?.on(APISocketCancelOrder, callback: { (data, ack) in
+			if let dic = data[0] as? NSDictionary {
+				//POST NOTIFICATION
+				APP_DELEGATE.scheduleNotification(notificationType: .orderRejected) //"Order cancelled.")
+				postNotification(withName: notificationCenterKeys.orderAccepted.rawValue, userInfo: dic as! [AnyHashable : Any])
+			}
+		})*/
+        
+        socket?.on(APISOCKETGetNewMessage, callback: { data, ack in
+                   let array:NSArray = (data[0] as! NSDictionary).value(forKey: "chat_message") as! NSArray
+
+                   let arrayObjMessage = CoreDataAdaptor.sharedDataAdaptor.saveMessage(array: array)
+
+                   if arrayObjMessage.count != 0 {
+                       self.delegate?.InitialMessage?(array: arrayObjMessage)
+                   }
+
+               })
+	}
+    
+	
+    func StartDriverLocationUpdate(dic : [String : Any])
+    {
+        socket?.emitWithAck(APISocketStartDriverLocationUpdate, dic).timingOut(after: 0, callback: { (result) in
+                   print(result)
+                    //NotificationCenter.default.post(name: NSNotification.Name("NewOrder"), object: nil, userInfo: result[0] as? [AnyHashable : Any])
+               })
+    }
+    func StopDriverLocationUpdate(dic : [String : Any])
+      {
+          socket?.emitWithAck(APISocketStopDriverLocationUpdate, dic).timingOut(after: 0, callback: { (result) in
+                     print(result)
+                      //NotificationCenter.default.post(name: NSNotification.Name("NewOrder"), object: nil, userInfo: result[0] as? [AnyHashable : Any])
+                 })
+      }
+	
+    func PlaceOrder(dic : [String : Any])  {
+        socket?.emitWithAck(APISocketPlaceOrder, dic).timingOut(after: 0, callback: { (result) in
+            print(result)
+             //NotificationCenter.default.post(name: NSNotification.Name("NewOrder"), object: nil, userInfo: result[0] as? [AnyHashable : Any])
+        })
+    }
+<<<<<<< HEAD
+	func CompleteOrder(dic : [String : Any])  {
+        socket?.emitWithAck(APISocketCompleteOrder, dic).timingOut(after: 0, callback: { (result) in
+            print(result)
+             //NotificationCenter.default.post(name: NSNotification.Name("NewOrder"), object: nil, userInfo: result[0] as? [AnyHashable : Any])
+        })
+    }
+}
+=======
+    
+    //MARK: - Chat Module
+    func sendMessage(data:NSDictionary){
+
+        socket?.emitWithAck(APISOCKETSendNewMessage, data).timingOut(after: 0) {data in
+            let dic:NSDictionary = (data[0] as! NSDictionary)
+            print(dic)
+            let arrMessage = dic.value(forKey: "chat_message") as! NSMutableArray
+            let dictMessage = arrMessage[0] as! NSMutableDictionary
+            let msgId = dictMessage.value(forKey: "id")
+            if (CoreDataAdaptor.sharedDataAdaptor.updateMessageID(messageID: "\(msgId!)",createdDate :dictMessage.value(forKey: "created_date") as! String ,modifiedDate : dictMessage.value(forKey: "modified_date") as! String)) {
+                print("Yes")
+                self.delegate?.reloadMessages?()
+            }
+        }
+>>>>>>> customer_chat_module
+
+    }
+    
+    func fetchNewMessagesOfSender(data:NSDictionary)  {
+        socket?.emitWithAck (APISocketFetchMessages, data).timingOut(after: 0, callback: { data in
+              let array:NSArray = (data[0] as! NSDictionary).value(forKey: "chat_message") as! NSArray
+              let arrayObjMessage = CoreDataAdaptor.sharedDataAdaptor.saveMessage(array: array)
+              if arrayObjMessage.count != 0 {
+                    self.delegate?.InitialMessage?(array: arrayObjMessage)
+              }  else {
+                self.delegate?.reloadMessages?()
+            }
+        })
+       }
+    
+    func checkNewMessage(data:NSDictionary) {
+        socket?.emit(APISOCKETGetNewMessage, data)
+    }
+}
+

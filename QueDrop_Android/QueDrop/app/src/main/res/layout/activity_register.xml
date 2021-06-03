@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.register.view.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbarRegister"
+        layout="@layout/activity_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRegister">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_48sdp">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/customer_unpress"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.35"
+                app:riv_oval="true" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPickProfile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/ic_add_profile"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfileImage"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfileImage" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etFirstNameField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toStartOf="@+id/etLastNameField"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfileImage">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etFirstNameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="start"
+                    android:hint="@string/firstNameRegister"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etLastNameRegister"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etLastNameField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etFirstNameField"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfileImage">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etLastNameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="start"
+                    android:hint="@string/lastNameRegister"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etEmailRegister"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etFirstNameField">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmailRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="start"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etPasswordRegister"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailField">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPasswordRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etConfirmPasswordRegister"
+                    android:paddingEnd="@dimen/dimen_50dp"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivShowPassRegister"
+                android:layout_width="@dimen/margin_large"
+                android:layout_height="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:contentDescription="Hide"
+                android:padding="@dimen/margin_tiny"
+                android:src="@drawable/ic_eye_hide"
+                app:layout_constraintBottom_toBottomOf="@+id/etPasswordField"
+                app:layout_constraintEnd_toEndOf="@+id/etPasswordField"
+                app:layout_constraintTop_toTopOf="@+id/etPasswordField" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvConfirmPasswordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPasswordField">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etConfirmPasswordRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center_vertical"
+                    android:hint="@string/confirmRegister"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etReferralRegister"
+                    android:paddingEnd="@dimen/dimen_50dp"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvConfirmPassword" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivShowConfirmPassRegister"
+                android:layout_width="@dimen/margin_large"
+                android:layout_height="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:contentDescription="Hide"
+                android:padding="@dimen/margin_tiny"
+                android:src="@drawable/ic_eye_hide"
+                app:layout_constraintBottom_toBottomOf="@+id/tvConfirmPasswordField"
+                app:layout_constraintEnd_toEndOf="@+id/tvConfirmPasswordField"
+                app:layout_constraintTop_toTopOf="@+id/tvConfirmPasswordField" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etReferralField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvConfirmPasswordField">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etReferralRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center_vertical"
+                    android:hint="@string/addReferCode"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/policyCheckRegister"
+                    android:textColor="@color/colorGray100"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvReferral" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCopyReferralRegister"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:contentDescription="Hide"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/copy_document"
+                android:tint="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="@+id/etReferralField"
+                app:layout_constraintEnd_toEndOf="@+id/etReferralField"
+                app:layout_constraintTop_toTopOf="@+id/etReferralField" />
+
+            <CheckBox
+                android:id="@+id/policyCheckRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:button="@drawable/check_cart"
+                android:padding="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text=""
+                android:textColor="@color/colorGray100"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etReferralField" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTermsRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/colorGray100"
+                android:textSize="@dimen/text_size_xxxxm"
+                app:layout_constraintStart_toEndOf="@+id/policyCheckRegister"
+                app:layout_constraintTop_toTopOf="@+id/policyCheckRegister" />
+
+            <Button
+                android:id="@+id/btnNextRegister"
+                style="@style/QueDrop.Button.DarkBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Next"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/tvTermsRegister" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

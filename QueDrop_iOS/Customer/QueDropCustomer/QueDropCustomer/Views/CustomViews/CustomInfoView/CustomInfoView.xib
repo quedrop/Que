@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomInfoView" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageLogo" destination="ddi-NK-cgz" id="gtt-pr-3N0"/>
+                <outlet property="lblStoreAddress" destination="39W-Y2-GLF" id="xDE-Jo-wSw"/>
+                <outlet property="lblStoreDistance" destination="eEn-tr-c38" id="01y-7B-4FO"/>
+                <outlet property="lblStoreName" destination="VqQ-5b-pe6" id="0Wh-sF-Hv4"/>
+                <outlet property="lblTime" destination="M15-yj-inp" id="xY6-SM-Uj4"/>
+                <outlet property="topMainView" destination="78b-zQ-Vrc" id="FpZ-hG-Utc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78b-zQ-Vrc">
+                    <rect key="frame" x="10" y="10" width="361" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-IS-et0">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="110"/>
+                            <connections>
+                                <action selector="btnViewDidTap:" destination="-1" eventType="touchUpInside" id="CHG-EQ-nom"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-NK-cgz">
+                            <rect key="frame" x="15" y="15" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="C4R-bn-NGs"/>
+                                <constraint firstAttribute="width" secondItem="ddi-NK-cgz" secondAttribute="height" multiplier="1:1" id="wMs-gg-rdz"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="DOMINO'S PIZZA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqQ-5b-pe6">
+                            <rect key="frame" x="105" y="10" width="246" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="555, East  main St. MA 1235 " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39W-Y2-GLF">
+                            <rect key="frame" x="105" y="32" width="246" height="16"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5 KM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-tr-c38">
+                            <rect key="frame" x="105" y="50" width="36.5" height="13.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="6 min" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M15-yj-inp">
+                            <rect key="frame" x="105" y="63.5" width="32" height="13.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="bnb-IS-et0" firstAttribute="top" secondItem="78b-zQ-Vrc" secondAttribute="top" id="8Gw-bP-qZi"/>
+                        <constraint firstAttribute="trailing" secondItem="VqQ-5b-pe6" secondAttribute="trailing" constant="10" id="CkA-F9-iFV"/>
+                        <constraint firstItem="bnb-IS-et0" firstAttribute="leading" secondItem="78b-zQ-Vrc" secondAttribute="leading" id="HzB-kQ-syS"/>
+                        <constraint firstItem="VqQ-5b-pe6" firstAttribute="top" secondItem="ddi-NK-cgz" secondAttribute="top" constant="-5" id="R68-3b-dkX"/>
+                        <constraint firstAttribute="trailing" secondItem="bnb-IS-et0" secondAttribute="trailing" id="ULA-ey-okP"/>
+                        <constraint firstItem="ddi-NK-cgz" firstAttribute="leading" secondItem="78b-zQ-Vrc" secondAttribute="leading" constant="15" id="YOk-Jv-uYQ"/>
+                        <constraint firstItem="eEn-tr-c38" firstAttribute="leading" secondItem="39W-Y2-GLF" secondAttribute="leading" id="d55-kq-m0k"/>
+                        <constraint firstItem="VqQ-5b-pe6" firstAttribute="leading" secondItem="ddi-NK-cgz" secondAttribute="trailing" constant="10" id="emN-oY-BMm"/>
+                        <constraint firstItem="eEn-tr-c38" firstAttribute="top" secondItem="39W-Y2-GLF" secondAttribute="bottom" constant="2" id="gn6-EZ-MJp"/>
+                        <constraint firstItem="39W-Y2-GLF" firstAttribute="trailing" secondItem="VqQ-5b-pe6" secondAttribute="trailing" id="jlh-RP-RaP"/>
+                        <constraint firstItem="39W-Y2-GLF" firstAttribute="top" secondItem="VqQ-5b-pe6" secondAttribute="bottom" id="nXO-dQ-W10"/>
+                        <constraint firstAttribute="bottom" secondItem="bnb-IS-et0" secondAttribute="bottom" id="pvz-fM-2Gj"/>
+                        <constraint firstItem="M15-yj-inp" firstAttribute="leading" secondItem="eEn-tr-c38" secondAttribute="leading" id="rHw-kv-IED"/>
+                        <constraint firstItem="39W-Y2-GLF" firstAttribute="leading" secondItem="ddi-NK-cgz" secondAttribute="trailing" constant="10" id="u8l-te-dCm"/>
+                        <constraint firstAttribute="bottom" secondItem="ddi-NK-cgz" secondAttribute="bottom" constant="15" id="v1e-CA-Hpw"/>
+                        <constraint firstItem="M15-yj-inp" firstAttribute="top" secondItem="eEn-tr-c38" secondAttribute="bottom" id="vfa-Mb-RTS"/>
+                        <constraint firstItem="ddi-NK-cgz" firstAttribute="centerY" secondItem="78b-zQ-Vrc" secondAttribute="centerY" id="vwe-ea-MB2"/>
+                        <constraint firstItem="ddi-NK-cgz" firstAttribute="top" secondItem="78b-zQ-Vrc" secondAttribute="top" constant="15" id="wCr-BU-cIB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOg-6b-Pdx">
+                    <rect key="frame" x="189" y="120" width="3" height="23"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="ORf-ik-ZuE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="78b-zQ-Vrc" secondAttribute="trailing" constant="10" id="1JS-0V-2jB"/>
+                <constraint firstItem="uOg-6b-Pdx" firstAttribute="top" secondItem="78b-zQ-Vrc" secondAttribute="bottom" id="1sq-xN-Unh"/>
+                <constraint firstItem="78b-zQ-Vrc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="A4j-OP-Nm2"/>
+                <constraint firstItem="uOg-6b-Pdx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QLF-bF-bLp"/>
+                <constraint firstAttribute="bottom" secondItem="uOg-6b-Pdx" secondAttribute="bottom" constant="10" id="TF2-BJ-qvD"/>
+                <constraint firstItem="78b-zQ-Vrc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="xdO-cS-7fm"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="12.318840579710146" y="-53.90625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coffee" width="154.5" height="90.5"/>
+    </resources>
+</document>

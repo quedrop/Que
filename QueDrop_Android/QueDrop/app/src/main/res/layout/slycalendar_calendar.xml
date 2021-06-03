@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            />
+
+        <TextView
+            android:id="@+id/txtSelectedMonth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xxxxm"
+            tools:text="April" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calSunday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calMonday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calTuesday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calWednesday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calThursday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+        <TextView
+            android:id="@+id/day6"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calFriday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm"/>
+
+        <TextView
+            android:id="@+id/day7"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="@string/calSaturday"
+            android:textAllCaps="false"
+            android:textColor="@color/slycalendar_defTextColor"
+            android:textSize="@dimen/text_size_xm" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0dp"
+        android:numColumns="7"
+        android:verticalSpacing="0dp" />
+
+</LinearLayout>

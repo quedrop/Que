@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteCustomView" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="crm-MD-TUm" id="3wO-Bp-dXZ"/>
+                <outlet property="btnOk" destination="wIF-Zt-5eU" id="mIu-ro-uJo"/>
+                <outlet property="lblText" destination="B9Z-al-Sxs" id="pHf-MQ-f1J"/>
+                <outlet property="topImageView" destination="zou-Ax-CsJ" id="DNI-Bx-8de"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwc-Fb-4ba">
+                    <rect key="frame" x="41.5" y="338" width="331" height="232.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="zou-Ax-CsJ">
+                            <rect key="frame" x="122" y="20" width="87" height="87"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zou-Ax-CsJ" secondAttribute="height" multiplier="1:1" id="Pyr-z9-BdX"/>
+                                <constraint firstAttribute="width" constant="87" id="fG0-2a-8N3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you Sure you Want to  Delete this Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9Z-al-Sxs">
+                            <rect key="frame" x="20" y="127" width="291" height="41.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp2-CH-BIB">
+                            <rect key="frame" x="0.0" y="188.5" width="331" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-MD-TUm">
+                                    <rect key="frame" x="0.0" y="0.0" width="162" height="44"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="f8E-yf-ePs"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vline" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-lR-HfK">
+                                    <rect key="frame" x="163.5" y="4" width="4" height="35.5"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIF-Zt-5eU">
+                                    <rect key="frame" x="169" y="0.0" width="162" height="44"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                    <state key="normal" title="Ok"/>
+                                    <connections>
+                                        <action selector="actionOk:" destination="-1" eventType="touchUpInside" id="ZcG-Zb-xFL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="KAh-lR-HfK" firstAttribute="centerX" secondItem="xp2-CH-BIB" secondAttribute="centerX" id="8qd-je-jQI"/>
+                                <constraint firstItem="crm-MD-TUm" firstAttribute="width" secondItem="xp2-CH-BIB" secondAttribute="width" multiplier="0.49" id="BqI-5A-8zb"/>
+                                <constraint firstItem="crm-MD-TUm" firstAttribute="height" secondItem="xp2-CH-BIB" secondAttribute="height" id="MeL-Fu-Cix"/>
+                                <constraint firstItem="wIF-Zt-5eU" firstAttribute="centerY" secondItem="crm-MD-TUm" secondAttribute="centerY" id="Ng7-6g-4Pv"/>
+                                <constraint firstItem="crm-MD-TUm" firstAttribute="leading" secondItem="xp2-CH-BIB" secondAttribute="leading" id="Tu3-9t-Tgu"/>
+                                <constraint firstItem="KAh-lR-HfK" firstAttribute="centerY" secondItem="xp2-CH-BIB" secondAttribute="centerY" id="YCM-Ww-Wcj"/>
+                                <constraint firstItem="KAh-lR-HfK" firstAttribute="width" secondItem="xp2-CH-BIB" secondAttribute="width" multiplier="0.01" constant="1" id="buR-ZG-a7E"/>
+                                <constraint firstItem="wIF-Zt-5eU" firstAttribute="height" secondItem="crm-MD-TUm" secondAttribute="height" id="ctX-Ws-nWz"/>
+                                <constraint firstAttribute="height" constant="44" id="jwS-At-ap4"/>
+                                <constraint firstItem="crm-MD-TUm" firstAttribute="centerY" secondItem="xp2-CH-BIB" secondAttribute="centerY" id="ppw-qP-85b"/>
+                                <constraint firstAttribute="trailing" secondItem="wIF-Zt-5eU" secondAttribute="trailing" id="svA-As-Zki"/>
+                                <constraint firstItem="wIF-Zt-5eU" firstAttribute="width" secondItem="crm-MD-TUm" secondAttribute="width" id="tRJ-Lv-7J6"/>
+                                <constraint firstItem="KAh-lR-HfK" firstAttribute="height" secondItem="xp2-CH-BIB" secondAttribute="height" multiplier="0.8" id="wta-2S-8QP"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fpt-mG-OqA">
+                            <rect key="frame" x="0.0" y="188.5" width="331" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="vd5-8P-zYY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="B9Z-al-Sxs" firstAttribute="top" secondItem="zou-Ax-CsJ" secondAttribute="bottom" constant="20" id="02X-aw-7zm"/>
+                        <constraint firstItem="zou-Ax-CsJ" firstAttribute="top" secondItem="Pwc-Fb-4ba" secondAttribute="top" constant="20" id="Gct-CE-JWx"/>
+                        <constraint firstAttribute="bottom" secondItem="xp2-CH-BIB" secondAttribute="bottom" id="NNW-g7-of4"/>
+                        <constraint firstItem="zou-Ax-CsJ" firstAttribute="centerX" secondItem="Pwc-Fb-4ba" secondAttribute="centerX" id="Sb7-5F-bab"/>
+                        <constraint firstItem="Fpt-mG-OqA" firstAttribute="top" secondItem="xp2-CH-BIB" secondAttribute="top" id="We4-Cl-XVl"/>
+                        <constraint firstAttribute="trailing" secondItem="xp2-CH-BIB" secondAttribute="trailing" id="Xb8-1T-6Ba"/>
+                        <constraint firstItem="Fpt-mG-OqA" firstAttribute="centerX" secondItem="xp2-CH-BIB" secondAttribute="centerX" id="cIr-dP-433"/>
+                        <constraint firstItem="B9Z-al-Sxs" firstAttribute="leading" secondItem="Pwc-Fb-4ba" secondAttribute="leading" constant="20" id="jVj-mG-1ge"/>
+                        <constraint firstItem="xp2-CH-BIB" firstAttribute="leading" secondItem="Pwc-Fb-4ba" secondAttribute="leading" id="t0r-ap-SK0"/>
+                        <constraint firstAttribute="trailing" secondItem="B9Z-al-Sxs" secondAttribute="trailing" constant="20" id="xde-fH-iPN"/>
+                        <constraint firstItem="Fpt-mG-OqA" firstAttribute="width" secondItem="xp2-CH-BIB" secondAttribute="width" id="xnm-iY-HSt"/>
+                        <constraint firstItem="xp2-CH-BIB" firstAttribute="top" secondItem="B9Z-al-Sxs" secondAttribute="bottom" constant="20" id="z9w-v0-XKZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pwc-Fb-4ba" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5zm-cI-9gh"/>
+                <constraint firstItem="Pwc-Fb-4ba" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="1" id="a6Z-Bi-p2i"/>
+                <constraint firstItem="Pwc-Fb-4ba" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="rgk-Xu-FmY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete" width="86.5" height="86.5"/>
+        <image name="vline" width="1" height="38"/>
+    </resources>
+</document>

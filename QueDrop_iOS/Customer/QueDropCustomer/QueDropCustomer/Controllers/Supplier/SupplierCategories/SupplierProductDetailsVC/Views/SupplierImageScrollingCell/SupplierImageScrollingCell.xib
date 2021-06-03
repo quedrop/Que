@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SupplierImageScrollingCell" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="244"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ3-o0-Cbo">
+                        <rect key="frame" x="0.0" y="0.0" width="439" height="244"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m45-HM-dEQ" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="439" height="244"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wli-QA-7Ar" customClass="AlertBlurrView" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="439" height="244"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wli-QA-7Ar" secondAttribute="trailing" id="4KF-cs-56a"/>
+                            <constraint firstItem="wli-QA-7Ar" firstAttribute="leading" secondItem="mJ3-o0-Cbo" secondAttribute="leading" id="8Ob-43-ASe"/>
+                            <constraint firstItem="m45-HM-dEQ" firstAttribute="top" secondItem="mJ3-o0-Cbo" secondAttribute="top" id="DTm-49-KeB"/>
+                            <constraint firstAttribute="trailing" secondItem="m45-HM-dEQ" secondAttribute="trailing" id="KFA-Ke-IFB"/>
+                            <constraint firstAttribute="bottom" secondItem="wli-QA-7Ar" secondAttribute="bottom" id="erm-bu-BMj"/>
+                            <constraint firstAttribute="bottom" secondItem="m45-HM-dEQ" secondAttribute="bottom" id="ipW-HN-QZh"/>
+                            <constraint firstItem="m45-HM-dEQ" firstAttribute="leading" secondItem="mJ3-o0-Cbo" secondAttribute="leading" id="oQj-yN-RkV"/>
+                            <constraint firstItem="wli-QA-7Ar" firstAttribute="top" secondItem="mJ3-o0-Cbo" secondAttribute="top" id="sjX-W7-Sgc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mJ3-o0-Cbo" secondAttribute="trailing" id="4DD-HM-avk"/>
+                    <constraint firstItem="mJ3-o0-Cbo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WuL-yz-8dE"/>
+                    <constraint firstItem="mJ3-o0-Cbo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YRh-ap-VQh"/>
+                    <constraint firstAttribute="bottom" secondItem="mJ3-o0-Cbo" secondAttribute="bottom" id="txT-Di-PIf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewBlurr" destination="wli-QA-7Ar" id="phg-2D-OM8"/>
+                <outlet property="viewContainer" destination="mJ3-o0-Cbo" id="xRj-hO-EdO"/>
+                <outlet property="viewSlideShow" destination="m45-HM-dEQ" id="CpB-Lx-TjC"/>
+            </connections>
+            <point key="canvasLocation" x="-105.07246376811595" y="60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

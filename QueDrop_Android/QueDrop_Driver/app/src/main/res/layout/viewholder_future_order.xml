@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_15dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginEnd="@dimen/dimen_15dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:background="@drawable/bg_order_item_background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFutureOrderStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/borderTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/borderTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@color/colorBorderGray"
+        app:layout_constraintTop_toBottomOf="@+id/rvFutureOrderStore" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRepeatedOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/repeated_order_mode"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderTop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFutureOrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRepeatedOrder"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatedOrder"
+        tools:text="10 November 2020" />
+
+    <ImageView
+        android:id="@+id/ivMonthlyCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calender"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatedOrder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmountOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/amount"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFutureOrderDate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOTotalOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAccept"
+        app:layout_constraintStart_toStartOf="@+id/tvRepeatedOrder"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmountOrder"
+        tools:text="@string/amount" />
+
+    <View
+        android:id="@+id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:background="@color/colorLighterGray"
+        app:layout_constraintTop_toBottomOf="@+id/rvFutureOrderStore" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAccept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_submedium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@drawable/bg_accept"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="Accept"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvReject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOTotalOrder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_submedium"
+        android:layout_marginEnd="@dimen/margin_submedium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@drawable/bg_reject"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="Reject"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAccept"
+        app:layout_goneMarginStart="@dimen/margin_submedium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

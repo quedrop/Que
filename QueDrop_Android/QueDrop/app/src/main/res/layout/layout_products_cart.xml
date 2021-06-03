@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_2dp"
+    android:paddingTop="@dimen/dimen_3dp"
+    android:paddingRight="@dimen/dimen_2dp"
+    android:paddingBottom="@dimen/dimen_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childConstraintCart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/ivVegIconCart"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:src="@drawable/topicveg"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProductNameCart"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvProductNameCart"
+            app:layout_constraintWidth_percent="0.04" />
+
+
+        <TextView
+            android:id="@+id/tvProductNameCart"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_7dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_xxxxm"
+            app:layout_constraintLeft_toRightOf="@+id/ivVegIconCart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBinCart"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:src="@drawable/bin"
+            android:tint="@color/colorRed"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProductNameCart"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvProductNameCart"
+            app:layout_constraintWidth_percent="0.05" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tvPAddOnsCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="@string/default1"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/text_size_m"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCustomiseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPAddOnsCart"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:drawableRight="@drawable/path_right"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/customise"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/text_size_xm"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNoteQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPAddOnsCart"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/customise"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/text_size_m"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"></LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linear"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="2.2"
+            android:background="@drawable/view_rounded_rating"
+            app:layout_constraintLeft_toRightOf="@+id/childConstraintCart1"
+            app:layout_constraintRight_toLeftOf="@+id/tvProductPriceCart"
+            app:layout_constraintTop_toTopOf="@+id/childConstraintCart1">
+
+            <ImageView
+                android:id="@+id/minusCart1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:padding="@dimen/dimen_2dp"
+                android:src="@drawable/minuscart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1.2"
+                app:layout_constraintRight_toLeftOf="@+id/tvQuantity1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33"></ImageView>
+
+
+            <TextView
+                android:id="@+id/tvQuantity1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:gravity="center"
+                android:text="@string/quantity"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_m"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintRight_toLeftOf="@+id/plusCart1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.34"></TextView>
+
+            <ImageView
+                android:id="@+id/plusCart1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:src="@drawable/pluscart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33"></ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvProductPriceCart"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2.2"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_xm"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'QueDropCustomer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for QueDropCustomer
+		#Google
+		pod 'GoogleMaps'
+		pod 'GooglePlaces'
+		pod 'GoogleSignIn'
+		#  FBLogin
+		pod 'FBSDKLoginKit'
+		pod 'FacebookLogin'
+		
+		#pod 'Crashlytics'
+		#pod 'Fabric'
+		pod 'Firebase/Crashlytics'
+		# (Recommended) Pod for Google Analytics
+		pod 'Firebase/Analytics'
+		pod 'Firebase/Core'
+		#pod 'Firebase/Auth'
+		#pod 'Firebase/Firestore'
+		#pod 'Firebase/Database'
+		pod 'Firebase/Messaging'
+		pod 'Alamofire'
+		pod 'ReachabilitySwift', '~> 4.3.1'
+		
+		pod 'ListPlaceholder'
+		pod 'TTTAttributedLabel'
+		pod 'IQKeyboardManager'
+		pod 'SDWebImage'
+		pod 'SwiftyJSON'
+		pod 'UITextView+Placeholder'
+		pod 'IHProgressHUD'
+		pod 'ImageSlideshow', '~> 1.8.3'
+		pod "ImageSlideshow/SDWebImage"
+		pod "FlexibleSteppedProgressBar"
+		pod 'QRCodeReader.swift', '~> 10.1.0'
+		#pod 'VACalendar'
+		#Socket.IO
+    pod 'Socket.IO-Client-Swift'
+		pod 'Starscream'
+    pod 'GrowingTextView'
+    pod 'OTPFieldView'
+pod 'JVFloatLabeledTextField'
+#pod 'Braintree'
+pod 'Braintree/Apple-Pay'
+pod 'Braintree/DataCollector'
+
+end

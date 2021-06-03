@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="idReceiverTextCell" rowHeight="88" id="KGk-i7-Jjw" customClass="ReceiverMessageCell" customModule="QueDropCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqw-sO-IDk">
+                        <rect key="frame" x="8" y="5" width="127" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Message " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AW-5P-h8V">
+                                <rect key="frame" x="10" y="10" width="107" height="43"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3AW-5P-h8V" firstAttribute="top" secondItem="Vqw-sO-IDk" secondAttribute="top" constant="10" id="0j3-wo-gxn"/>
+                            <constraint firstAttribute="trailing" secondItem="3AW-5P-h8V" secondAttribute="trailing" constant="10" id="N8r-04-HUm"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Och-n1-DkM"/>
+                            <constraint firstItem="3AW-5P-h8V" firstAttribute="leading" secondItem="Vqw-sO-IDk" secondAttribute="leading" constant="10" id="Ulc-ov-S9i"/>
+                            <constraint firstAttribute="bottom" secondItem="3AW-5P-h8V" secondAttribute="bottom" constant="10" id="WEZ-Wl-jNk"/>
+                            <constraint firstItem="3AW-5P-h8V" firstAttribute="centerX" secondItem="Vqw-sO-IDk" secondAttribute="centerX" id="imY-0Y-Mou"/>
+                            <constraint firstItem="3AW-5P-h8V" firstAttribute="centerY" secondItem="Vqw-sO-IDk" secondAttribute="centerY" id="j1Q-3r-btV"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="pLk-gy-6id"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBA-Qd-tfH">
+                        <rect key="frame" x="0.0" y="68" width="320" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdC-5F-ajd">
+                                <rect key="frame" x="10" y="-1" width="36" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EdC-5F-ajd" firstAttribute="leading" secondItem="xBA-Qd-tfH" secondAttribute="leading" constant="10" id="Sc7-Qe-b4O"/>
+                            <constraint firstAttribute="height" constant="20" id="a6j-NZ-D0R"/>
+                            <constraint firstItem="EdC-5F-ajd" firstAttribute="centerY" secondItem="xBA-Qd-tfH" secondAttribute="centerY" constant="-3" id="oTq-oc-oVS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xBA-Qd-tfH" secondAttribute="bottom" id="QDC-H9-m3O"/>
+                    <constraint firstItem="Vqw-sO-IDk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Uc7-ow-wDn"/>
+                    <constraint firstItem="Vqw-sO-IDk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZdS-wY-Nwl"/>
+                    <constraint firstAttribute="trailing" secondItem="xBA-Qd-tfH" secondAttribute="trailing" id="bD6-l4-I8x"/>
+                    <constraint firstItem="xBA-Qd-tfH" firstAttribute="top" secondItem="Vqw-sO-IDk" secondAttribute="bottom" id="oZy-zj-0pl"/>
+                    <constraint firstItem="xBA-Qd-tfH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ojf-SO-SXg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ViewMessageContainer" destination="Vqw-sO-IDk" id="FLh-XG-e1m"/>
+                <outlet property="lblDateTime" destination="EdC-5F-ajd" id="49e-Cj-Xk6"/>
+                <outlet property="lblMessageText" destination="3AW-5P-h8V" id="6H1-KK-VIw"/>
+                <outlet property="vwDateHeight" destination="a6j-NZ-D0R" id="cSC-fR-0zy"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>

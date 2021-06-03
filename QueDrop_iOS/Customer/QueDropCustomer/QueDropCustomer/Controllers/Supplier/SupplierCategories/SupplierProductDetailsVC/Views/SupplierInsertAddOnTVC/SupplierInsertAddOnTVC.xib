@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SupplierInsertAddOnTVC" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdh-VG-lOe">
+                        <rect key="frame" x="15" y="10" width="358" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0E-2D-nOI">
+                                <rect key="frame" x="5" y="0.0" width="59" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRh-en-LcW">
+                                <rect key="frame" x="303" y="0.0" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XGB-9a-RRH"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnAddClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e1z-Wr-pa1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="998-Zx-7wL"/>
+                            <constraint firstAttribute="bottom" secondItem="sRh-en-LcW" secondAttribute="bottom" id="DCZ-0f-MF1"/>
+                            <constraint firstItem="sRh-en-LcW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d0E-2D-nOI" secondAttribute="trailing" id="IAh-rp-ukp"/>
+                            <constraint firstItem="d0E-2D-nOI" firstAttribute="top" secondItem="tdh-VG-lOe" secondAttribute="top" id="RM7-jg-V6u"/>
+                            <constraint firstItem="sRh-en-LcW" firstAttribute="top" secondItem="tdh-VG-lOe" secondAttribute="top" id="TsJ-5M-syO"/>
+                            <constraint firstAttribute="bottom" secondItem="d0E-2D-nOI" secondAttribute="bottom" id="ewU-qf-IQI"/>
+                            <constraint firstItem="d0E-2D-nOI" firstAttribute="leading" secondItem="tdh-VG-lOe" secondAttribute="leading" constant="5" id="lFz-fc-a21"/>
+                            <constraint firstAttribute="trailing" secondItem="sRh-en-LcW" secondAttribute="trailing" constant="5" id="s4T-EY-6MG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tdh-VG-lOe" secondAttribute="bottom" id="C1d-r2-pGS"/>
+                    <constraint firstItem="tdh-VG-lOe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Eya-g3-LE8"/>
+                    <constraint firstAttribute="trailing" secondItem="tdh-VG-lOe" secondAttribute="trailing" constant="15" id="Wv1-KO-mFb"/>
+                    <constraint firstItem="tdh-VG-lOe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fab-Ef-DiA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAdd" destination="sRh-en-LcW" id="osR-XJ-9hh"/>
+                <outlet property="lblTitle" destination="d0E-2D-nOI" id="Ly8-tG-OLz"/>
+                <outlet property="viewContainer" destination="tdh-VG-lOe" id="etQ-Nj-PLL"/>
+            </connections>
+            <point key="canvasLocation" x="-127.53623188405798" y="60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

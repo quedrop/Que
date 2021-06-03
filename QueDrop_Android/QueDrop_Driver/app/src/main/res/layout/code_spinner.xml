@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="@dimen/button_min_height_small"
+    android:background="@color/colorLighterGray"
+    android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_country_flag_row"
+            android:layout_width="@dimen/margin_sublarge"
+            android:layout_height="@dimen/margin_sublarge"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_submedium"
+            android:src="@drawable/ic_lock" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_country_code_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_submedium"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="+44"
+            android:textSize="@dimen/text_size_ll"
+            android:textColor="@color/colorGray100"
+            />
+
+</LinearLayout>

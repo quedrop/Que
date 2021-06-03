@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLighterGray">
+
+    <include
+        android:id="@+id/toolbarFutureOrder"
+        layout="@layout/toolbar_normal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/dimen_4dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFutureConst">
+
+        <com.quedrop.driver.utils.customeCalender.views.EventsCalendar
+            android:id="@+id/eventsCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:background="@color/colorWhite"
+            android:overScrollMode="never"
+            app:datesTextSize="16sp"
+            app:eventDotColor="@color/colorPrimary"
+            app:isBoldTextOnSelectionEnabled="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:monthTitleColor="#666666"
+            app:monthTitleTextSize="24sp"
+            app:primaryTextColor="#666666"
+            app:secondaryTextColor="#ffffff"
+            app:selectedDateLabelGravity="center"
+            app:selectionColor="@color/colorPrimary"
+            app:weekHeaderColor="#666666"
+            app:weekHeaderTextSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFutureConst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@drawable/bg_email"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarFutureOrder">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:padding="@dimen/dimen_15dp"
+            android:text="20 March 2020"
+            android:textSize="@dimen/dimen_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:src="@drawable/ic_calender"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFutureCalendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/dimen_4dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarFutureOrder">
+
+        <com.quedrop.driver.utils.customeCalender.views.EventsCalendar
+            android:id="@+id/futureCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:background="@color/colorWhite"
+            android:overScrollMode="never"
+            app:datesTextSize="@dimen/dimen_14sp"
+            app:eventDotColor="@color/colorPrimary"
+            app:isBoldTextOnSelectionEnabled="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:monthTitleColor="#666666"
+            app:monthTitleTextSize="@dimen/dimen_20sp"
+            app:primaryTextColor="@color/colorCalenderText"
+            app:secondaryTextColor="#ffffff"
+            app:selectedDateLabelGravity="center"
+            app:selectionColor="@color/colorPrimary"
+            app:weekHeaderColor="#666666"
+            app:weekHeaderTextSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFutureOrder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarCard" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noFutureOrderData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

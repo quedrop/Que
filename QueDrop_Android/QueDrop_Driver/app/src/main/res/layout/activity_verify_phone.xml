@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.verifyphone.VerifyPhoneActivity">
+
+
+    <include
+        android:id="@+id/toolbarOTP"
+        layout="@layout/toolbar_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOTP">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMobile"
+                android:layout_width="@dimen/button_confirm_size"
+                android:layout_height="@dimen/button_confirm_size"
+                android:layout_marginTop="@dimen/margin_subhuge"
+                android:src="@drawable/ic_smartphone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:fontFamily="@font/montserratregular"
+                android:gravity="center"
+                android:text="Waiting for Automatically detect and"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/text_size_xxxm"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivMobile" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassFirst"
+                android:layout_width="@dimen/button_min_height"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_sublarge"
+                android:background="@drawable/bg_otp"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:nextFocusDown="@id/etPassSecond"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorGray100"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xl"
+                app:layout_constraintEnd_toStartOf="@+id/etPassSecond"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassSecond"
+                android:layout_width="@dimen/button_min_height"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_sublarge"
+                android:background="@drawable/bg_otp"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:nextFocusDown="@id/etPassThird"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorGray100"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xl"
+                app:layout_constraintEnd_toStartOf="@+id/etPassThird"
+                app:layout_constraintStart_toEndOf="@+id/etPassFirst"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassThird"
+                android:layout_width="@dimen/button_min_height"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_sublarge"
+                android:background="@drawable/bg_otp"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:nextFocusDown="@id/etPassFourth"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorGray100"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xl"
+                app:layout_constraintEnd_toStartOf="@+id/etPassFourth"
+                app:layout_constraintStart_toEndOf="@+id/etPassSecond"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassFourth"
+                android:layout_width="@dimen/button_min_height"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/bg_otp"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:hint="-"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:nextFocusDown="@id/btnVerify"
+                android:padding="@dimen/margin_medium"
+                android:textColor="@color/colorGray100"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_xl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etPassThird"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+
+            <Button
+                android:id="@+id/btnVerify"
+                style="@style/QueDrop.Button.DarkBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_sublarge"
+                android:text="Verify Now"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/etPassFirst" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_rounded_dialog">
+
+    <TextView
+        android:id="@+id/tvGiveFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="@string/giveFeedBack"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_xl2" />
+
+    <TextView
+        android:id="@+id/tvPleaseGiveFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_below="@+id/tvGiveFeedBack"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="@string/writeFeedBack"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_l" />
+
+    <com.fuzzproductions.ratingbar.RatingBar
+        android:id="@+id/tvDriverRateDialog"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPleaseGiveFeedBack"
+        android:layout_centerHorizontal="true"
+        app:emptyDrawable="@drawable/ic_rating_empty"
+        app:filledDrawable="@drawable/ic_rating_fill"
+        app:isIndicator="false"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDriverImageConfirm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivDriverImageConfirm"
+        app:numStars="5"
+        app:rating="0"
+        app:starSize="@dimen/dimen_20dp" />
+
+
+    <EditText
+        android:id="@+id/editFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tvDriverRateDialog"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/view_rounded_search_edit"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="start"
+        android:padding="@dimen/dimen_5dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_xxxm" />
+
+
+    <LinearLayout
+        android:id="@+id/linear12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_below="@+id/editFeedBack"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_below="@id/linear12"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/cancelFeedBack"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:id="@+id/tvDialogOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/sendFeedBack"
+            android:textColor="@color/colorBlueText"
+            android:textSize="@dimen/text_size_l" />
+    </LinearLayout>
+</RelativeLayout>

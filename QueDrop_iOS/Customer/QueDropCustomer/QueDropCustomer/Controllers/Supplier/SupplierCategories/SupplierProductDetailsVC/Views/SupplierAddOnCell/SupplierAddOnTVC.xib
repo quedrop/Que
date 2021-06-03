@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="SupplierAddOnTVC" customModule="GoferDeliveryCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="491" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPC-uw-RRV">
+                        <rect key="frame" x="15" y="10" width="461" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6gv-hd-jAE">
+                                <rect key="frame" x="0.0" y="0.0" width="461" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-Yq-b9Z">
+                                        <rect key="frame" x="0.0" y="2.5" width="334.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="o9K-er-y8q"/>
+                                        </constraints>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmF-Gd-eXp">
+                                        <rect key="frame" x="344.5" y="2.5" width="80" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="U2X-T5-Rue"/>
+                                        </constraints>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-B3-tSt">
+                                        <rect key="frame" x="434.5" y="5" width="26.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Qg7-2i-XbV"/>
+                                            <constraint firstAttribute="width" secondItem="6bA-B3-tSt" secondAttribute="height" multiplier="1:1.5" id="ctz-fz-zfK"/>
+                                        </constraints>
+                                        <state key="normal" image="bin_gray"/>
+                                        <connections>
+                                            <action selector="btnDeleteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="852-ZD-7Qv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xmF-Gd-eXp" firstAttribute="height" secondItem="y3T-Yq-b9Z" secondAttribute="height" id="Mpe-b0-Lxz"/>
+                                    <constraint firstItem="6bA-B3-tSt" firstAttribute="centerY" secondItem="6gv-hd-jAE" secondAttribute="centerY" id="hUM-hN-mXV"/>
+                                    <constraint firstItem="xmF-Gd-eXp" firstAttribute="centerY" secondItem="6gv-hd-jAE" secondAttribute="centerY" id="qeT-rc-InA"/>
+                                    <constraint firstItem="y3T-Yq-b9Z" firstAttribute="centerY" secondItem="6gv-hd-jAE" secondAttribute="centerY" id="wtX-R2-FpF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0VU-fp-Z05"/>
+                            <constraint firstItem="6gv-hd-jAE" firstAttribute="leading" secondItem="OPC-uw-RRV" secondAttribute="leading" id="3gc-I6-PbZ"/>
+                            <constraint firstItem="6gv-hd-jAE" firstAttribute="top" secondItem="OPC-uw-RRV" secondAttribute="top" id="JaY-2m-ZZW"/>
+                            <constraint firstAttribute="trailing" secondItem="6gv-hd-jAE" secondAttribute="trailing" id="Mrq-F1-Pzl"/>
+                            <constraint firstAttribute="bottom" secondItem="6gv-hd-jAE" secondAttribute="bottom" id="pjd-KV-HaM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OPC-uw-RRV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="38q-B9-DbR"/>
+                    <constraint firstAttribute="bottom" secondItem="OPC-uw-RRV" secondAttribute="bottom" id="Grv-Iz-GTf"/>
+                    <constraint firstAttribute="trailing" secondItem="OPC-uw-RRV" secondAttribute="trailing" constant="15" id="hYJ-yi-x0N"/>
+                    <constraint firstItem="OPC-uw-RRV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tXQ-GY-3yG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="6bA-B3-tSt" id="p3B-d1-a6i"/>
+                <outlet property="txtName" destination="y3T-Yq-b9Z" id="ufe-la-Acj"/>
+                <outlet property="txtPrice" destination="xmF-Gd-eXp" id="fda-FK-yAN"/>
+                <outlet property="viewContainer" destination="OPC-uw-RRV" id="nmF-VJ-Ejb"/>
+            </connections>
+            <point key="canvasLocation" x="-5.0724637681159424" y="56.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bin_gray" width="11.5" height="14.5"/>
+    </resources>
+</document>

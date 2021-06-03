@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Top : 562cae
+
+     bottom : 1c77f2-->
+
+    <color name="startGradientColor">#562cae</color>
+    <color name="endGradientColor">#1c77f2</color>
+    <color name="colorPrimary">#562cae</color>
+    <color name="colorPrimaryDark">#562cae</color>
+    <color name="colorAccent">#562cae</color>
+    <color name="colorBackground">#f5faff</color>
+    <color name="colorBlueText">#1850ca</color>
+    <color name="colorGrayText">#4C4C4C</color>
+    <color name="colorLightGray">#8B8B8B</color>
+
+
+    <color name="colorDarkGray">#161616</color>
+    <color name="colorGray100">#4C4C4C</color>
+
+    <color name="colorLighterGray">#F5F5F5</color>
+    <color name="colorBorderGray">#C4C4C4</color>
+    <color name="colorLightWhite">#FCFCFC</color>
+    <color name="colorBlue">#34BDF4</color>
+    <color name="colorOrange">#F7A10D</color>
+    <color name="colorTextDark">#1850ca</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackGray">#333333</color>
+    <color name="text_black_transparent">#4A000000</color>
+    <color name="colorAccept">#6CAC20</color>
+
+    <color name="colorThemeGreen">#1850ca</color>
+    <color name="colorAlphaThemeGreen">#1850ca</color>
+    <color name="colorTextBlue">#1850ca</color>
+    <color name="colorCalenderText">#666666</color>
+
+
+    <color name="text_black_disabled">#54000000</color>
+
+    <color name="colorStatusGreen">#7BE28C</color>
+    <color name="colorStatusOrange">#FFB04E</color>
+
+</resources>

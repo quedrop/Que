@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <View
+        android:id="@+id/borderTop"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_1dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@color/colorBorderGray"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/order_on"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderTop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="10 November 2020"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_xm"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderOn"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderOn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/amount"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Rs.850"
+        android:textColor="@color/colorGray100"
+        android:textSize="@dimen/text_size_xm"
+        app:layout_constraintStart_toStartOf="@+id/tvOrderOn"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/bg_order_status"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_xsmall"
+        android:paddingEnd="@dimen/margin_small"
+        android:fontFamily="@font/montserratsemibold"
+        android:paddingBottom="@dimen/margin_xsmall"
+        android:text="@string/dispached_for_delivery"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOrderTotal"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:layout_height="0dp"
+        android:layout_width="@dimen/border_05dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatus"
+        android:background="@color/colorBorderGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_height="0dp"
+        android:layout_width="@dimen/border_05dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatus"
+        android:background="@color/colorBorderGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

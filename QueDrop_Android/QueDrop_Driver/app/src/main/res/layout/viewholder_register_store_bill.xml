@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtStoreNameTotal"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratbold"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtStoreTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ncjkncdkjnkdknknckn cknkdcnkncnkcnknck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtStoreTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:ems="5"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/order_discount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtStoreDiscount"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:text="@string/shopping_fee"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtDiscount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStoreNameTotal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:ems="5"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStoreNameTotal"
+        tools:text="@string/order_discount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

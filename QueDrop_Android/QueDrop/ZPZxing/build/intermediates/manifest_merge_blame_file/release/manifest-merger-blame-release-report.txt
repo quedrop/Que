@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.zxing.client.android"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:5:3-62
+11-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:5:20-60
+12
+13    <uses-feature
+13-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:7:3-82
+14        android:name="android.hardware.camera"
+14-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:7:17-55
+15        android:required="false" />
+15-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:7:56-80
+16    <uses-feature
+16-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:8:3-88
+17        android:name="android.hardware.camera.front"
+17-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:8:17-61
+18        android:required="false" />
+18-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:8:62-86
+19    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+20    <uses-feature
+20-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:10:3-92
+21        android:name="android.hardware.camera.autofocus"
+21-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:10:17-65
+22        android:required="false" />
+22-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:10:66-90
+23    <uses-feature
+23-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:11:3-88
+24        android:name="android.hardware.camera.flash"
+24-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:11:17-61
+25        android:required="false" />
+25-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:11:62-86
+26    <uses-feature
+26-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:12:3-93
+27        android:name="android.hardware.screen.landscape"
+27-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:12:17-65
+28        android:required="false" />
+28-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:12:66-90
+29    <uses-feature
+29-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:13:3-80
+30        android:name="android.hardware.wifi"
+30-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:13:17-53
+31        android:required="false" />
+31-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:13:54-78
+32
+33    <application>
+33-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:16:3-22:17
+34        <activity
+34-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:17:7-21:66
+35            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+35-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:17:17-78
+36            android:clearTaskOnLaunch="true"
+36-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:18:17-49
+37            android:screenOrientation="portrait"
+37-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:19:17-53
+38            android:stateNotNeeded="true"
+38-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:20:17-46
+39            android:windowSoftInputMode="stateAlwaysHidden" />
+39-->/Volumes/DATA/Arp/Workspace_QueDrop/quedrop-android-customer-supplier/QueDrop/ZPZxing/AndroidManifest.xml:21:17-64
+40    </application>
+41
+42</manifest>

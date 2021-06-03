@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">QueDrop Driver</string>
+    <string name="account_register">Don\'t have an Account?</string>
+    <string name="agree_terms">Terms of Use</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="password">Password</string>
+    <string name="notification">Notification</string>
+    <string name="order">Order</string>
+    <string name="earnings">Earnings</string>
+    <string name="profile">Profile</string>
+    <string name="wrong_number">Wrong number?</string>
+    <string name="current_order">Current Order</string>
+    <string name="past_order">Past Order</string>
+    <string name="manual_store_payment">Manual Store Payment</string>
+    <string name="earn_payment">Earn Payment</string>
+
+    <!-- <string name="facebook_app_id">865312617252614</string>-->
+    <string name="facebook_app_id" translatable="false">587758498831302</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb587758498831302</string>
+
+    <string name="clickingRegister">By Clicking this box I have read the</string>
+    <string name="termsConditions">Terms &amp; Conditions&#160;</string>
+    <string name="forApp"> for this app</string>
+    <string name="continueLogin">By Continuing,you Agree to our</string>
+    <string name="termsOfUse">Terms of Use&#160;</string>
+    <string name="and">and</string>
+    <string name="policyLogin">&#160;Privacy Policy</string>
+    <string name="notAccount">Don\'t have an Account?</string>
+    \
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mapApiKey">AIzaSyCfFo3hkgd1zDyNG2FC0FsbYws1srIhHak</string>
+
+    <string name="urlDirection">https://maps.googleapis.com/maps/api/directions/json?</string>
+    <string name="settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_referral">Add Referral Code (Optional)</string>
+    <string name="next">Next</string>
+    <string name="forgot_password_alert">Please enter the Email Address below,\nYou will receive a link to create a\nnew password via Email</string>
+    <string name="send">Send</string>
+    <string name="enter_phone_alert">We will send you a Verification\ncode to verify your Phone Number</string>
+    <string name="add_license_photo">Add License Photo</string>
+    <string name="add_profile_photo">Add Profile Photo</string>
+    <string name="add_vehicle_type">Add Vehicle Type</string>
+    <string name="add_registration_proof">Add Registration Proof</string>
+    <string name="add_number_plate">Add Number Plate</string>
+    <string name="logout">Log Out</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="save">Save</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="request_details">Request Details</string>
+    <string name="order_details">Order Details</string>
+    <string name="delivery_route">Delivery Route</string>
+    <string name="confirm_order_delivery">Confirmed Order Deliver</string>
+    <string name="queue_order_request">Queue Order Request</string>
+    <string name="confirm">Confirm</string>
+    <string name="running_trip">Running Trip</string>
+    <string name="order_on">ORDER ON</string>
+    <string name="amount">AMOUNT</string>
+    <string name="dispached_for_delivery">Dispached for Delivery</string>
+    <string name="chat">Chat</string>
+    <string name="note">Note</string>
+    <string name="bill_details">Bill details</string>
+    <string name="give_reviews">Give Reviews</string>
+    <string name="order_discount">Order Discount</string>
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="service_charges">Service Charges</string>
+    <string name="shopping_fee">Shopping Fee</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="to_pay">To Pay</string>
+    <string name="free">-</string>
+    <string name="note_text">Please Attached the Receipt. after then Manual Store Items Bill will be shown</string>
+    <string name="scanned_customer_qr_code">Scanned Customer \nQR Code</string>
+    <string name="enter_bill_amount">Enter Bill Amount</string>
+    <string name="cancel">Cancel</string>
+    <string name="order_amount">Amount</string>
+    <string name="send_reviews">Send Reviews</string>
+    <string name="please_write_your_feedback">Please Write your Feedback</string>
+    <string name="view_qr_code">View QR Code</string>
+    <string name="manage_payment_method">Manage Payment method</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="rating_reviews">Rating Reviews</string>
+    <string name="identity_details">Identity Details</string>
+    <string name="my_referral_code">My Referral Code</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="setup_payment_method">Payment Method</string>
+
+
+    <string name="referrals">Referrals</string>
+    <string name="inviteFriends">Invite a Friends</string>
+    <string name="instructionsReferral">Refer a Friend &amp; We\'ll Give\nyou &amp; your buddy Rs.100 off on\nyour next orders above Rs.199</string>
+
+    <string name="add_new_account">Add New Bank Account to Import your Details</string>
+    <string name="choose_your_payment_method">Choose your payment method</string>
+    <string name="add_bank_account">Add Bank Account</string>
+
+    <!--//password validation-->
+
+    <string name="current_password_required">Current Password required!</string>
+    <string name="confirm_password_required">Confirm password required!</string>
+    <string name="new_password_required">New password required!</string>
+    <string name="password_hint">Password should contains at least one number, a UPPER case and a lower case letter</string>
+    <string name="confirm_password_not_matched">Confirm password doesn\'t matched!</string>
+    <string name="edit">Edit</string>
+    <string name="user_name">User Name</string>
+
+    <string name="firstNameVal">Enter First Name</string>
+    <string name="userNameVal">Enter User Name</string>
+    <string name="lastNameVal">Enter Last Name</string>
+    <string name="emailAddressVal">Enter Email Address</string>
+    <string name="validEmailAddressVal">Enter Valid Email Address</string>
+    <string name="validPasswordVal">Enter Valid Password</string>
+    <string name="passwordVal">Enter Password</string>
+    <string name="passwordDigitVal">Password must least 6 digit long</string>
+    <string name="confirmPasswordVal">Enter Confirm Password</string>
+    <string name="passwordNotMatchVal">Password not matched</string>
+    <string name="checkConditionVal">Please check Condition Box</string>
+    <string name="additionalInfo">Additional Information</string>
+    <string name="btnSave">Save</string>
+    <string name="oldPasswordVal">Enter Old Password</string>
+    <string name="newPasswordVal">Enter New Password</string>
+    <string name="enterPhoneNum">Enter Valid Mobile Number</string>
+    <string name="shareCode">QUEDROP Delivery : Use my referral code and get reward \n Referral Code</string>
+
+
+    <!--local notification-->
+    <string name="driver_refute_noti">Your identity details are refute by admin. Please check it and resubmit it.</string>
+    <string name="driver_verified">Your identity details are verified by admin. Now you can go online.</string>
+    <string name="accepted">Accepted</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="order_deliverd_convo">You can\'t send message to this conversation because order is already Delivered</string>
+    <string name="loading">Loading...</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_data_available">No Data Available</string>
+
+
+    <!-- Earn Module-->
+    <string name="today_all_orders">Today All Orders</string>
+    <string name="view_all_orders">View All Orders</string>
+    <string name="see_weekly_summary">See Weekly Summary</string>
+    <string name="view_all_screen">view All Screen</string>
+    <string name="total_delivery_earning">Total delivery earning</string>
+    <string name="total_shipping_earning">Total shipping earning</string>
+    <string name="total_tip_earning">Total tip earning</string>
+    <string name="total_referral_earning">Total Referral earning</string>
+    <string name="total">Total</string>
+    <string name="payment_received_status">Payment Received</string>
+    <string name="payment_pending_status">Payment Pending</string>
+    <string name="last_order">LAST ORDER</string>
+    <string name="today">TODAY</string>
+    <string name="no_prize">-</string>
+
+    <!--Recurring Order-->
+    <string name="repeated_order_mode">Repeated Order Mode</string>
+
+
+    <!--   Que -->
+
+    <!--Splash screen-->
+    <string name="S_QUE">Que</string>
+    <string name="S_TURN_ON_GPS">Turn On GPS</string>
+    <string name="S_REQ_GPS">Please turn you GPS to find out \nbetter suggestion near you.</string>
+    <string name="msg_sure_to_delete">Are you sure you want to delete?</string>
+    <string name="express_delivery">Express Delivery</string>
+    <string name="express">Express</string>
+</resources>

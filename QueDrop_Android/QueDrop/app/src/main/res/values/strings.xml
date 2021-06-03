@@ -1,0 +1,585 @@
+<resources>
+    <string name="app_name" translatable="false">QueDrop</string>
+    <string name="perTurnOnGPS" translatable="false">Turn On GPS</string>
+    <string name="textWhoAreYou" translatable="false">Who Are you</string>
+    <string name="textHowUseQueDrop" translatable="false">How do you want to use</string>
+    <string name="textQue" translatable="false">QUE?</string>
+    <string name="textCustomer" translatable="false">Customer</string>
+    <string name="textSupplier" translatable="false">Supplier</string>
+    <string name="textCustomerCheck" translatable="false">I\'m Customer</string>
+    <string name="textSupplierCheck" translatable="false">I\'m Supplier</string>
+    <string name="textAddress" translatable="false">Add an Address</string>
+    <string name="addAddress" translatable="false">Add Address</string>
+    <string name="saveAddress" translatable="false">Save Address</string>
+    <string name="submitAddress" translatable="false">Submit</string>
+    <string name="continueAddress" translatable="false">Confirm</string>
+    <string name="placeAutomaticFragment" translatable="false">Place Fragment</string>
+    <string name="addressName" translatable="false">Address name</string>
+    <string name="addressUnitNumber" translatable="false">Unit Number</string>
+    <string name="addressIcon" translatable="false">Address Type</string>
+    <string name="addressInfo" translatable="false">Address</string>
+    <string name="addressTitle" translatable="false">Select Delivery Address</string>
+    <string name="currentLocation" translatable="false">Current Location</string>
+    <string name="hintSearch" translatable="false">Search Address</string>
+    <string name="edit_address" translatable="false">Edit Address</string>
+
+    <string name="editAddressBlank" translatable="false">Enter Address First</string>
+    <string name="editAddressNameBlank" translatable="false">Enter Address Name First</string>
+    <string name="notCustomer" translatable="false">Not a Customer?</string>
+    <string name="loginAsSupplier" translatable="false">Log In as Supplier</string>
+
+    <string name="home" translatable="false">Home</string>
+    <string name="work" translatable="false">Work</string>
+    <string name="hotel" translatable="false">Hotel</string>
+    <string name="other" translatable="false">Other</string>
+
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="textDelete" translatable="false">Are you Sure you Want To Delete this Address</string>
+
+    <string name="noFeesTitle" translatable="false">No Fees</string>
+    <string name="noFeesText" translatable="false">This is the Original Price of the item from the store.QueDrop doesn\'t add any extra fees for this item\'s price.</string>
+    <string name="noFeesCancel" translatable="false">Cancel</string>
+    <string name="noFeesConfirm" translatable="false">Confirm</string>
+
+    <string name="homeTab" translatable="false">Home</string>
+    <string name="notificationTab" translatable="false">Notification</string>
+    <string name="orderTab" translatable="false">Order</string>
+    <string name="exploreTab" translatable="false">Explore</string>
+    <string name="favoriteTab" translatable="false">Favorite</string>
+    <string name="profileTab" translatable="false">Profile</string>
+
+    <string name="favoriteTabs" translatable="false">Favorites</string>
+    <string name="todayDeal" translatable="false">Today Deals</string>
+    <string name="paymentOffer" translatable="false">Payment Offers/Coupon</string>
+    <string name="restaurantOffers" translatable="false">Restaurant Offers</string>
+    <string name="categories" translatable="false">Categories</string>
+
+    <string name="textDeliveryLocation" translatable="false">Delivery Location</string>
+    <string name="fromSettingAddress" translatable="false">SettingAddress</string>
+    <string name="fromHomeAddress" translatable="false">HomeAddress</string>
+
+    <!--    First Flow === available store,product-->
+
+    <string name="hintEditNearBy" translatable="false">Search here..</string>
+    <string name="hintFood" translatable="false">Search Product</string>
+    <string name="kilometer" translatable="false">0 km</string>
+    <string name="closedShop" translatable="false">&#160; - Closed</string>
+    <string name="mins" translatable="false">0 mins</string>
+
+
+    <string name="rs" translatable="false">$</string>
+    <string name="pendingStatus" translatable="false">Pending</string>
+
+    <string name="responseTrue" translatable="false">true</string>
+    <string name="responseFalse" translatable="false">false</string>
+
+    <string name="title" translatable="false">title</string>
+    <string name="current" translatable="false">current</string>
+
+    <string name="noCategoryAvailableStore" translatable="false">No Product Available</string>
+    <string name="openingNow" translatable="false">Open Now</string>
+    <string name="closed" translatable="false">Closed</string>
+
+    <string name="add" translatable="false">Add</string>
+    <string name="added" translatable="false">Added</string>
+    <string name="quantity" translatable="false">1</string>
+
+    <string name="medium" translatable="false">Select Size</string>
+    <string name="add_addons" translatable="false">Add addons</string>
+    <string name="defaultSize" translatable="false">Default</string>
+    <string name="addItem" translatable="false">ADD ITEM</string>
+    <string name="itemTotal" translatable="false">Item total</string>
+    <string name="serviceCharges" translatable="false">Service Charges</string>
+    <string name="shoppingFee" translatable="false">Shopping Fee</string>
+    <string name="deliveryFee" translatable="false">Delivery Fee</string>
+
+    <string name="orderDiscount" translatable="false">Order Discount</string>
+    <string name="couponDiscount" translatable="false">Coupon Discount</string>
+
+
+    <string name="itemTotalRs" translatable="false">item</string>
+    <string name="itemsTotalRs" translatable="false">items</string>
+    <string name="customise" translatable="false">Customise</string>
+
+    <string name="addtoCart" translatable="false">ADD TO CART</string>
+    <string name="viewCart" translatable="false">VIEW CART</string>
+
+
+    <!--    Second Flow == available store - not available product Only-->
+
+    <string name="addOrder" translatable="false">Add Order</string>
+    <string name="typeProduct" translatable="false">Type Product</string>
+    <string name="qty" translatable="false">Qty</string>
+    <string name="continueMain" translatable="false">Continue</string>
+    <string name="addItemTap" translatable="false">Tap To add an item</string>
+    <string name="titleStoreDetails" translatable="false">Order Details</string>
+    <string name="productNameToast" translatable="false">Please add Product Name.</string>
+    <string name="productQuantityToast" translatable="false">Please add Product Quantity.</string>
+    <string name="validQty" translatable="false">Please enter valid Quantity.</string>
+    <string name="firstLoginMessage" translatable="false">Please login to application to add items for placing order.</string>
+
+
+    <!--    Third Flow == not available store - not available product Only-->
+
+    <string name="titleStore" translatable="false">Add a Store</string>
+    <string name="btnAddStore" translatable="false">Add</string>
+    <string name="addAddressStore" translatable="false">Add Address</string>
+    <string name="storeDescription" translatable="false">Description</string>
+    <string name="storeNameToast" translatable="false">Please add Store Name</string>
+    <string name="storeLocationToast" translatable="false">Please add Store Location</string>
+    <string name="addStoreSuccessful" translatable="false">Your store successfully registerd.</string>
+
+
+    <!--    Cart Screen-->
+
+    <string name="titleCart" translatable="false">Cart</string>
+    <string name="deliverNow" translatable="false">Deliver to </string>
+    <string name="itemsCart" translatable="false">items $</string>
+    <string name="minCart" translatable="false">mins</string>
+    <string name="placeOrderCart" translatable="false">Place Order</string>
+    <string name="storeNameCart" translatable="false">Store Name</string>
+    <string name="storeAddressCart" translatable="false">Store Address</string>
+    <string name="storeDistanceCart" translatable="false">km</string>
+    <string name="recurringOrderCart" translatable="false">Recurring Order</string>
+    <string name="paymentMethod" translatable="false">Payment Method</string>
+    <string name="change" translatable="false">Change</string>
+    <string name="cardNum" translatable="false">**** **** **** 9999</string>
+    <string name="expires" translatable="false">Expires 03/27</string>
+    <string name="deliveryNowCart" translatable="false">Deliver Now</string>
+    <string name="advanceOrderCart" translatable="false">Advance Order</string>
+    <string name="changeDeliveryDateTime" translatable="false">Change delivery date &amp; time</string>
+    <string name="billDetails" translatable="false">Bill Details</string>
+    <string name="itemTotalCart" translatable="false">Item total</string>
+    <string name="chargesStoreCart" translatable="false">Store Charges</string>
+    <string name="deliveryChargesCart" translatable="false">Delivery Charges</string>
+    <string name="payCart" translatable="false">To Pay</string>
+    <string name="rsCart" translatable="false">$0</string>
+    <string name="freeCart" translatable="false">FREE</string>
+    <string name="noteCart" translatable="false">Write a Note for Driver</string>
+    <string name="default1" translatable="false">Default</string>
+    <string name="hours" translatable="false">hours</string>
+    <string name="min" translatable="false">mins</string>
+    <string name="customiseItem" translatable="false">Customise Item</string>
+    <string name="updateItem" translatable="false">Update Item</string>
+    <string name="browseMenuList" translatable="false">Browse Menu List</string>
+    <string name="totalAmountPurchased" translatable="false">Total amount for product will be updated after  order purchased.</string>
+    <string name="cartEmpty" translatable="false">Your Cart is Empty</string>
+    <string name="cartEmptyText" translatable="false">Looks like you haven\'t added anything \n to your Cart yet</string>
+    <string name="orderScreen" translatable="false">OrderScreen</string>
+    <string name="favouriteScreen" translatable="false">FavouriteScreen</string>
+    <string name="couponCart" translatable="false">Apply Coupon</string>
+    <string name="currentOrderNote" translatable="false">\u25CF  When Driver attached the receipt.After that Manual Store Items Bill will shown.</string>
+    <string name="checkNotes" translatable="false">please Check Notes First.</string>
+    <string name="notes" translatable="false">- Based On Coupon application and their expiry date order total might be different for the recurrent Order.</string>
+    <string name="cartCheckNotes" translatable="false">Terms &amp; Conditions for Stores and Products Added by the Customer and Future Orders:</string>
+    <string name="searchingDriver" translatable="false">Searching for Driver to \n Accept the Request.</string>
+    <string name="storeChargeTitle" translatable="false">Service Charge</string>
+    <string name="shoppingChargeTitle" translatable="false">Shopping Fee</string>
+    <string name="deliveryChargeTitle" translatable="false">Delivery Fee</string>
+    <string name="storeClosed" translatable="false">Selected Store is Closed For now, Please Select another time To place Order.</string>
+    <string name="storeAlertMessage" translatable="false">A service charge is a fee collected to pay for services related to the primary product or service being purchased.</string>
+    <string name="shoppingFeeAlertMessage" translatable="false">Products shopping fees is to be considered for those products which are added from manual stores.</string>
+    <string name="deliveryFeeAlertMessage" translatable="false">A delivery Fee is the cost of transporting or delivering goods.</string>
+
+
+    <!--    Coupon Screen-->
+    <string name="apply" translatable="false">Apply</string>
+    <string name="coupon" translatable="false">Coupon</string>
+    <string name="enterCouponCode" translatable="false">Enter Coupon Code</string>
+    <string name="maxSav" translatable="false">Maximum Saving \n $</string>
+    <string name="percentageCoupon" translatable="false">&#160;% Discount</string>
+    <string name="saveAdditionalDollar" translatable="false">You Saved additional $</string>
+    <string name="textCouponCode" translatable="false">Invalid Coupon Code</string>
+    <string name="okCoupon" translatable="false">Ok</string>
+    <string name="expiresCoupon" translatable="false">Expires On&#160;</string>
+
+
+    <!--    Recurring Screen-->
+    <string name="futureOrderTitle" translatable="false">Add Future Order</string>
+    <string name="saveFuture" translatable="false">save</string>
+    <string name="repeat" translatable="false">Repeat</string>
+    <string name="repeatUntil" translatable="false">Repeat Until Date</string>
+    <string name="label" translatable="false">Label</string>
+    <string name="writeHere" translatable="false">write here..</string>
+    <string name="sunday" translatable="false">SUN</string>
+    <string name="monday" translatable="false">MON</string>
+    <string name="tuesday" translatable="false">TUE</string>
+    <string name="wednesday" translatable="false">WED</string>
+    <string name="thursday" translatable="false">THU</string>
+    <string name="friday" translatable="false">FRI</string>
+    <string name="saturday" translatable="false">SAT</string>
+
+    <string name="tvSunday" translatable="false">Sunday</string>
+    <string name="tvMonday" translatable="false">Monday</string>
+    <string name="tvTuesday" translatable="false">Tuesday</string>
+    <string name="tvWednesday" translatable="false">Wednesday</string>
+    <string name="tvThursday" translatable="false">Thursday</string>
+    <string name="tvFriday" translatable="false">Friday</string>
+    <string name="tvSaturday" translatable="false">Saturday</string>
+
+
+    <string name="once" translatable="false">Once</string>
+    <string name="everyday" translatable="false">Everyday</string>
+    <string name="weekly" translatable="false">Weekly</string>
+    <string name="monthly" translatable="false">Monthly</string>
+    <string name="slycalendar_cancel" translatable="false">Cancel</string>
+    <string name="slycalendar_save" translatable="false">Ok</string>
+    <string name="slycalendar_next" translatable="false">Next</string>
+    <string name="slycalendar_prev" translatable="false">Prev</string>
+
+    <string name="calSunday" translatable="false">Sun</string>
+    <string name="calMonday" translatable="false">Mon</string>
+    <string name="calTuesday" translatable="false">Tue</string>
+    <string name="calWednesday" translatable="false">Wed</string>
+    <string name="calThursday" translatable="false">Thu</string>
+    <string name="calFriday" translatable="false">Fri</string>
+    <string name="calSaturday" translatable="false">Sat</string>
+
+
+    <string name="slycalendar_singledate" translatable="false">EE, dd MMMM</string>
+    <string name="slycalendar_short" translatable="false">EE, dd</string>
+    <string name="slycalendar_short_month" translatable="false">EE, dd MMM</string>
+    <string name="slycalendar_dates_period" translatable="false">%1$s – %2$s</string>
+
+    <string name="dateFormat" translatable="false">yyyy-MM-dd</string>
+    <string name="timeFormat12" translatable="false">hh:mm:ss aa</string>
+    <string name="timeFormat24" translatable="false">hh:mm:ss</string>
+    <string name="period" translatable="false">%1$s – %2$s</string>
+
+    <string name="recurringTitle" translatable="false">Recurring Order</string>
+    <string name="startDate" translatable="false">Start Date</string>
+    <string name="endDate" translatable="false">End Date</string>
+    <string name="startTime" translatable="false">Start Time</string>
+    <string name="endTime" translatable="false">End Time</string>
+    <string name="setDateTime" translatable="false">Set Date and Time</string>
+    <string name="btnRecurringOrder" translatable="false">Save Recurring Order</string>
+
+    <!--    Login Screen-->
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="rememberMe" translatable="false">Remember me</string>
+    <string name="forgotPassword" translatable="false">Forgot Password?</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="loginAsGuest" translatable="false">Login As Guest</string>
+    <string name="notAccount" translatable="false">Don\'t have an Account?</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="continueLogin" translatable="false">By Continuing,you Agree to our</string>
+    <string name="termsOfUse" translatable="false">Terms of Use&#160;</string>
+    <string name="and" translatable="false">and</string>
+    <string name="policyLogin" translatable="false">&#160;Privacy Policy</string>
+    <!-- <string name="facebook_app_id" translatable="false">631350660984439</string>-->
+    <string name="facebook_app_id" translatable="false">587758498831302</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb587758498831302</string>
+
+
+    <!--    Forgot Password-->
+    <string name="forgotPasswordTitle" translatable="false">Forgot Password</string>
+    <string name="forgotPasswordSend" translatable="false">Send</string>
+    <string name="instructionForgotPassword" translatable="false">Please enter the Email Address below,\nYou will receive a link to create a\nnew password via Email.</string>
+
+    <!--    Phone Number-->
+    <string name="phoneNumberTitle" translatable="false">Phone Number</string>
+    <string name="phoneNumberNext" translatable="false">Next</string>
+    <string name="instructionPhoneNumber" translatable="false">We will send you a Verification\ncode to verify your Phone Number</string>
+
+    <!--    Verification Code-->
+    <string name="verificationCodeTitle" translatable="false">Verification Code</string>
+    <string name="verify" translatable="false">Verify Now</string>
+    <string name="instructionVerify" translatable="false">Waiting for Automatically detect and SMS send to </string>
+    <string name="wrongNumber" translatable="false">&#160;Wrong Number?</string>
+
+    <!--    Sign Up-->
+    <string name="signUpTitle" translatable="false">Sign Up</string>
+    <string name="firstNameRegister" translatable="false">First Name</string>
+    <string name="lastNameRegister" translatable="false">Last Name</string>
+    <string name="emailRegister" translatable="false">Email</string>
+    <string name="passwordRegister" translatable="false">Password</string>
+    <string name="confirmRegister" translatable="false">Confirm Password</string>
+    <string name="addReferCode" translatable="false">Add Referral Code(Optional)</string>
+    <string name="clickingRegister" translatable="false">By Clicking this box I have read the</string>
+    <string name="termsConditions" translatable="false">Terms &amp; Conditions&#160;</string>
+    <string name="forApp" translatable="false"> for this app</string>
+    <string name="firstNameVal" translatable="false">Enter First Name</string>
+    <string name="userNameVal" translatable="false">Enter User Name</string>
+    <string name="lastNameVal" translatable="false">Enter Last Name</string>
+    <string name="emailAddressVal" translatable="false">Enter Email Address</string>
+    <string name="validEmailAddressVal" translatable="false">Enter Valid Email Address</string>
+    <string name="validPasswordVal" translatable="false">Enter Valid Password</string>
+    <string name="passwordVal" translatable="false">Enter Password</string>
+    <string name="passwordDigitVal" translatable="false">Password must least 6 digit long</string>
+    <string name="confirmPasswordVal" translatable="false">Enter Confirm Password</string>
+    <string name="passwordNotMatchVal" translatable="false">Password not matched</string>
+    <string name="checkConditionVal" translatable="false">Please check Condition Box</string>
+    <string name="additionalInfo" translatable="false">Additional Information</string>
+    <string name="btnSave" translatable="false">Save</string>
+    <string name="oldPasswordVal" translatable="false">Enter Old Password</string>
+    <string name="newPasswordVal" translatable="false">Enter New Password</string>
+
+
+    <!--    Enter Phone Number-->
+    <string name="enterPhoneNum" translatable="false">Enter Valid Mobile Number</string>
+    <string name="countryCodeEnter" translatable="false">Please select Country Code</string>
+
+    <!--    Order Screen-->
+    <string name="orderFragment" translatable="false">Order</string>
+    <string name="currentOrder" translatable="false">Current</string>
+    <string name="futureOrder" translatable="false">Future</string>
+    <string name="pastOrder" translatable="false">Past</string>
+    <string name="orderSuccessFul" translatable="false">Order SuccessFully</string>
+    <string name="orderOn" translatable="false">ORDER ON</string>
+    <string name="november" translatable="false">10 November 2020</string>
+    <string name="amountOrder" translatable="false">AMOUNT</string>
+    <string name="repeatOrder" translatable="false">Repeat Order</string>
+    <string name="currentOrderDetails" translatable="false">Order Details</string>
+    <string name="deliveryPerson" translatable="false">Delivery Person</string>
+    <string name="trackOrder" translatable="false">Track Order</string>
+    <string name="driverReceipt" translatable="false">Drivers Receipt</string>
+    <string name="driverName" translatable="false">Driver Name</string>
+    <string name="chatDriver" translatable="false">Chat</string>
+    <string name="scanQr" translatable="false">Scan QR</string>
+    <string name="receipt" translatable="false">Receipt&#160;</string>
+    <string name="remainingTime" translatable="false">Remaining Time</string>
+    <string name="rescheduleTime" translatable="false">Re-schedule</string>
+    <string name="note" translatable="false">Note</string>
+    <string name="itemsTotal" translatable="false">Items Total</string>
+    <string name="discount" translatable="false">Discount</string>
+    <string name="timeFinish" translatable="false">00:00</string>
+    <string name="tvTitleTrackOrder" translatable="false">Track Order</string>
+
+    <!--    Confirm Order-->
+    <string name="confirmOrder" translatable="false">Confirmed Order</string>
+    <string name="totalAmountConfirm" translatable="false">Total Amount</string>
+    <string name="addTip" translatable="false">Add Tip</string>
+    <string name="noTip" translatable="false">No Tip</string>
+    <string name="help" translatable="false">Help</string>
+    <string name="payNow" translatable="false">Pay Now</string>
+    <string name="driverNameConfirm" translatable="false">Driver Name</string>
+    <string name="giveFeedBack" translatable="false">Give Feedback</string>
+    <string name="writeFeedBack" translatable="false">Please Write your Feedback</string>
+    <string name="cancelFeedBack" translatable="false">Cancel</string>
+    <string name="sendFeedBack" translatable="false">Send Review</string>
+    <string name="googlepay_button_content_description" translatable="false">Google Pay</string>
+    <string name="buy_with_googlepay_button_content_description" translatable="false">Buy with Google Pay</string>
+
+    <!--    Favourite Store-->
+    <string name="emptyFav" translatable="false">You haven\'t liked any store yet.</string>
+
+    <!--    Notification-->
+    <string name="emptyNotification" translatable="false">You haven\'t liked any store yet.</string>
+
+    <!--    Customer Support-->
+    <string name="textSupport" translatable="false">Customer Support</string>
+    <string name="orderIdSupport" translatable="false">Order Id</string>
+    <string name="orderDetailsSupport" translatable="false">Order Details</string>
+    <string name="addProblemSupport" translatable="false">Add Problem</string>
+    <string name="sendProblemSupport" translatable="false">Send</string>
+
+    <!--    Profile Screen-->
+    <string name="profileTitle" translatable="false">Profile</string>
+    <string name="userName" translatable="false">Profile</string>
+    <string name="userAddress" translatable="false">address</string>
+    <string name="profileDetails" translatable="false">Basic Details</string>
+    <string name="profileName" translatable="false">Username</string>
+    <string name="profileEmail" translatable="false">Email</string>
+    <string name="profilePhoneNumber" translatable="false">Phone Number</string>
+    <string name="versionName" translatable="false">V</string>
+    <string name="editProfileTitle" translatable="false">Edit Profile</string>
+    <string name="editSaveDetails" translatable="false">Save</string>
+    <string name="addPhoneNumber" translatable="false">Add</string>
+    <string name="changePhoneNumber" translatable="false">Change</string>
+
+    <!--    Settings Screen-->
+    <string name="settings" translatable="false">Settings</string>
+    <string name="settingsChangePassword" translatable="false">Change Password</string>
+    <string name="settingsManageAddress" translatable="false">Manage Address</string>
+    <string name="settingsPaymentMethod" translatable="false">Manage Payment Method</string>
+    <string name="settingsReferralCode" translatable="false">My Referral Code</string>
+    <string name="settingsRatingsReviews" translatable="false">Reviews &amp; Ratings</string>
+    <string name="settingsSwitchAccount" translatable="false">Switch Account</string>
+    <string name="settingsLogOut" translatable="false">Log Out</string>
+    <string name="logInSentence" translatable="false">to get your account Details</string>
+    <string name="logInMain" translatable="false">Log In</string>
+
+
+    <!--    Change Password Screen-->
+    <string name="titleChangePwd" translatable="false">Change Password</string>
+    <string name="currentPwd" translatable="false">Current Password</string>
+    <string name="newPwd" translatable="false">New Password</string>
+    <string name="confirmPwd" translatable="false">Confirm Password</string>
+
+
+    <!--    Referral Code-->
+    <string name="titleReferral" translatable="false">My Referral Code</string>
+    <string name="referrals" translatable="false">Referrals</string>
+    <string name="inviteFriends" translatable="false">Invite a Friends</string>
+    <string name="shareCode" translatable="false">QUEDROP Delivery : Use my referral code and get reward \n Referral Code</string>
+    <string name="instructionsReferral" translatable="false">Refer a Friend &amp; We\'ll Give\nyou &amp; your buddy Rs.100 off on\nyour next orders above Rs.199</string>
+
+    <!--    Rate Review Screen-->
+    <string name="rateReview" translatable="false">Reviews &amp; Ratings</string>
+
+
+    <string-array name="editItem">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="todayDealItem">
+        <item>Payment Offers</item>
+        <item>Product Offers</item>
+    </string-array>
+
+    <string-array name="paymentOffers">
+        <item>Payment Offers 1</item>
+        <item>Payment Offers 2</item>
+
+    </string-array>
+
+    <string-array name="mainScreenApiItem">
+        <!--        <item>Payment Offers/Coupon</item>-->
+        <item>Payment Offers</item>
+        <item>Product Offers</item>
+        <item>Restaurant Offers</item>
+        <item>Fresh Produce</item>
+        <item>Categories</item>
+    </string-array>
+
+
+    <string-array name="status">
+        <item>Accepted</item>
+        <item>Dispatch for Delivery</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <string-array name="exploreScreenApiItem">
+        <item>Stores</item>
+        <item>Products</item>
+    </string-array>
+
+
+    <!--    <string name="mapApiKey">AIzaSyAuBkHxBeVEI6SOfcfBRMyyDDv1bAEYrZI</string>-->
+    <!--    <string name="mapApiKey">AIzaSyCc-XPpHskmvNVI5zH7T52Kvgja829p6Ek</string>-->
+    <!--    <string name="mapApiKey">AIzaSyDgqFI5DqqPNeJN2obtczJwyFwx0Hq7YeU</string>-->
+
+    <string name="urlDirection" translatable="false">https://maps.googleapis.com/maps/api/directions/json?</string>
+
+
+    <string name="mapApiKey" translatable="false">AIzaSyCfFo3hkgd1zDyNG2FC0FsbYws1srIhHak</string>
+    <string name="title_activity_future_order_activty" translatable="false">FutureOrderActivty</string>
+    <string name="title_activity_future_order" translatable="false">FutureOrderActivity</string>
+    <string name="edit" translatable="false">Edit</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="deleteCategory" translatable="false">Are you sure you want to delete this category?</string>
+    <string name="deleteProduct" translatable="false">Are you sure you want to delete this product?</string>
+    <string name="deleteOffer" translatable="false">Are you sure you want to delete this offer?</string>
+    <string name="product_name" translatable="false">Product Name</string>
+    <string name="extra_fee_tag" translatable="false">Extra Fee Tag</string>
+    <string name="add_price" translatable="false">Add Price</string>
+    <string name="addons" translatable="false">Addons</string>
+    <string name="add_product" translatable="false">Add Product</string>
+    <string name="edit_product" translatable="false">Edit Product</string>
+    <string name="tab_current_order" translatable="false">Current Order</string>
+    <string name="tab_past_order" translatable="false">Past Order</string>
+    <string name="offer_details" translatable="false">Offer Details</string>
+    <string name="category" translatable="false">Category</string>
+    <string name="product" translatable="false">Product</string>
+    <string name="percentage" translatable="false">Offer Percentage</string>
+    <string name="offer_code" translatable="false">Offer Code</string>
+    <string name="offer_start_date" translatable="false">Offer Start date</string>
+    <string name="offer_expire_Date" translatable="false">Offer Expiration date</string>
+    <string name="select_category" translatable="false">Select Category</string>
+    <string name="select_product" translatable="false">Select Product</string>
+    <string name="setup_payment" translatable="false">Setup Payment Method</string>
+    <string name="add_bank_account" translatable="false">Add Bank Account</string>
+    <string name="account_number" translatable="false">Account Number</string>
+    <string name="ifsc_code" translatable="false">IFSC Code</string>
+    <string name="other_details" translatable="false">Other Details</string>
+    <string name="account_type" translatable="false">Account Type</string>
+    <string name="manage_payment_method" translatable="false">Manage Payment Method</string>
+    <string name="title_activity_supplier_change_password" translatable="false">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="open_close_time" translatable="false">Opening and closing time</string>
+    <string name="store_profile" translatable="false">Store Profile</string>
+    <string name="edit_store_profile" translatable="false">Edit Store Profile</string>
+
+
+    <!-- gpay-->
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+    <string name="order_deliverd_convo" translatable="false">You can\'t send message to this conversation because order is already Delivered</string>
+
+    <string name="chat_remote_message" translatable="false">"ChatRemote</string>
+    <string name="loading" translatable="false">Loading...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!-- /Supplier Tab-->
+    <string name="S_Category_Tab" translatable="false">Category</string>
+    <string name="S_Order_Tab" translatable="false">Order</string>
+    <string name="S_Earnings_Tab" translatable="false">Earnings</string>
+    <string name="S_Notification_Tab" translatable="false">Notification</string>
+    <string name="S_Offers_Tab" translatable="false">Offers</string>
+    <string name="S_Profile_Tab" translatable="false">Profile</string>
+
+    <!-- Earn Module-->
+    <string name="today_all_orders" translatable="false">Today All Orders</string>
+    <string name="view_all_orders" translatable="false">View All Orders</string>
+    <string name="see_weekly_summary" translatable="false">See Weekly Summary</string>
+    <string name="view_all_screen" translatable="false">view All Screen</string>
+    <string name="total_delivery_earning" translatable="false">Total delivery earning</string>
+    <string name="total_shipping_earning" translatable="false">Total shipping earning</string>
+    <string name="total_tip_earning" translatable="false">Total tip earning</string>
+    <string name="total" translatable="false">Total</string>
+    <string name="payment_received_status" translatable="false">Payment Received</string>
+    <string name="payment_pending_status" translatable="false">Payment Pending</string>
+    <string name="last_order" translatable="false">LAST ORDER</string>
+    <string name="today" translatable="false">TODAY</string>
+    <string name="no_prize" translatable="false">-</string>
+
+    <!--Splash screen-->
+    <string name="S_QUE" translatable="false">Que</string>
+    <string name="S_TURN_ON_GPS" translatable="false">Turn On GPS</string>
+    <string name="S_REQ_GPS" translatable="false">Please turn you GPS to find out \nbetter suggestion near you.</string>
+    <string name="payment" translatable="false">Payment</string>
+    <string name="driver_note" translatable="false">Driver Note</string>
+    <string name="view_nearby_drivers" translatable="false"> View Nearby drivers</string>
+    <string name="available_drivers" translatable="false">Available drivers</string>
+    <string name="express_delivery" translatable="false">Express Delivery</string>
+    <string name="fresh_produce" translatable="false">Fresh Produce</string>
+    <string name="slash" translatable="false">|</string>
+    <string name="start_typing" translatable="false">Start typing...</string>
+    <string name="explore_nearby" translatable="false">Explore nearby</string>
+    <string name="restaurant_name_cuisine_or_a_dish" translatable="false">Restaurant name, cuisine, or a dish...</string>
+    <string name="ugh_oh" translatable="false">ugh-oh!</string>
+    <string name="looks_like_you_haven_t_login_to_view_nyour_orders" translatable="false">Looks like you haven\'t login to view \nyour orders.</string>
+    <string name="use_coupon_code" translatable="false">Use Coupon code</string>
+
+    <!--supplier create store-->
+    <string name="create_store" translatable="false">Create Store</string>
+    <string name="service_category" translatable="false">Service Category</string>
+    <string name="store_images" translatable="false">Store Images</string>
+    <string name="no_schedule_available" translatable="false">No Schedule Available</string>
+    <string name="close_time" translatable="false">Close time</string>
+    <string name="open_time" translatable="false">Open time</string>
+    <string name="days" translatable="false">Days</string>
+    <string name="store_logo" translatable="false">Store Logo</string>
+
+</resources>

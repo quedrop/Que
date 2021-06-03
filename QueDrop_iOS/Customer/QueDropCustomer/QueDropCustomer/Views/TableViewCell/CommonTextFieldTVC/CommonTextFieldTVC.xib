@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommonTextFieldTVC" id="KGk-i7-Jjw" customClass="CommonTextFieldTVC" customModule="QueDropCustomer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-FI-xLA">
+                        <rect key="frame" x="0.0" y="0.0" width="348" height="73"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-EX-YPl" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="12" y="8" width="324" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T3W-EX-YPl" secondAttribute="height" multiplier="108:19" id="nqn-aG-1cG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-RW-J1p">
+                                <rect key="frame" x="286" y="8" width="50" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="u4o-1a-dHr"/>
+                                </constraints>
+                                <state key="normal" image="eye_disabled">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <state key="highlighted" image="eye_enabled"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T3W-EX-YPl" secondAttribute="trailing" constant="12" id="7YL-d5-T9C"/>
+                            <constraint firstItem="UgH-RW-J1p" firstAttribute="top" secondItem="T3W-EX-YPl" secondAttribute="top" id="AMf-gh-C7U"/>
+                            <constraint firstAttribute="bottom" secondItem="T3W-EX-YPl" secondAttribute="bottom" constant="8" id="Lv9-fR-Laz"/>
+                            <constraint firstItem="T3W-EX-YPl" firstAttribute="leading" secondItem="ScZ-FI-xLA" secondAttribute="leading" constant="12" id="Nyz-O2-Dnd"/>
+                            <constraint firstItem="UgH-RW-J1p" firstAttribute="trailing" secondItem="T3W-EX-YPl" secondAttribute="trailing" id="OOd-mX-0H9"/>
+                            <constraint firstItem="T3W-EX-YPl" firstAttribute="top" secondItem="ScZ-FI-xLA" secondAttribute="top" constant="8" id="Tpr-mY-skz"/>
+                            <constraint firstItem="UgH-RW-J1p" firstAttribute="bottom" secondItem="T3W-EX-YPl" secondAttribute="bottom" id="Vz5-ZE-PYm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ScZ-FI-xLA" secondAttribute="trailing" id="LEE-en-gMo"/>
+                    <constraint firstAttribute="bottom" secondItem="ScZ-FI-xLA" secondAttribute="bottom" id="bvL-UZ-HaN"/>
+                    <constraint firstItem="ScZ-FI-xLA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="soh-jO-ZtL"/>
+                    <constraint firstItem="ScZ-FI-xLA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wTT-Iz-CMS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAction" destination="UgH-RW-J1p" id="l0p-Gn-vpf"/>
+                <outlet property="textField" destination="T3W-EX-YPl" id="iDK-4f-oG0"/>
+            </connections>
+            <point key="canvasLocation" x="102.89855072463769" y="128.90625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye_disabled" width="21.5" height="13.5"/>
+        <image name="eye_enabled" width="21.5" height="13.5"/>
+    </resources>
+</document>
